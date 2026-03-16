@@ -68,15 +68,15 @@ transition: slide-left
 
 <ul class="target-user-grid">
   <li>
-    <img src="/undraw-creator.svg" alt="个人创作者" class="target-user-illustration" />
+    <img src="/undraw-target-creator.svg" alt="个人创作者" class="target-user-illustration" />
     <p><strong>个人创作者</strong>更低门槛、更快出片，把创意快速转为可发布内容</p>
   </li>
   <li>
-    <img src="/undraw-team.svg" alt="专业团队" class="target-user-illustration" />
+    <img src="/undraw-target-team.svg" alt="专业团队" class="target-user-illustration" />
     <p><strong>专业团队</strong>多人并行协作，提升角色一致性与批量生产效率</p>
   </li>
   <li>
-    <img src="/undraw-enterprise.svg" alt="企业客户" class="target-user-illustration" />
+    <img src="/undraw-target-enterprise.svg" alt="企业客户" class="target-user-illustration" />
     <p><strong>企业客户</strong>标准化流程与权限治理，实现可控成本与稳定交付</p>
   </li>
 </ul>
@@ -172,11 +172,20 @@ transition: slide-left
 
 # 收入模型
 
-- 订阅收入：四档会员，覆盖不同规模用户
-- 消耗收入：积分加油包，提升付费弹性
-- 服务收入：接单平台与服务撮合抽佣
-- 发行收入：代理发行与本地化分成
-- 企业收入：团队版、内容培训与技术支持
+<ul class="target-user-grid">
+  <li>
+    <img src="/undraw-revenue-pricing.svg" alt="订阅收入" class="target-user-illustration" />
+    <p><strong>订阅收入</strong>四档会员覆盖不同规模用户，形成稳定持续的基础现金流</p>
+  </li>
+  <li>
+    <img src="/undraw-revenue-subscription.svg" alt="消耗收入" class="target-user-illustration" />
+    <p><strong>消耗收入</strong>积分加油包提升付费弹性，满足高频生成与阶段性爆发需求</p>
+  </li>
+  <li>
+    <img src="/undraw-revenue-enterprise.svg" alt="企业收入" class="target-user-illustration" />
+    <p><strong>企业收入</strong>团队版、内容培训与技术支持，提供高客单价增长空间</p>
+  </li>
+</ul>
 
 ---
 
@@ -234,36 +243,36 @@ transition: slide-left
 
 # 2026阶段目标
 
-<table class="biz-table">
-  <thead>
-    <tr>
-      <th>阶段</th>
-      <th>时间</th>
-      <th>核心目标</th>
-      <th>关键结果</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>第一阶段</td>
-      <td>0-3个月</td>
-      <td>上线与验证</td>
-      <td>5万+ MAU、500+ 作品、20+ 企业客户、月收入100万+、海外市场初步布局</td>
-    </tr>
-    <tr>
-      <td>第二阶段</td>
-      <td>3-6个月</td>
-      <td>商业化放大</td>
-      <td>50万+ MAU、服务收入占比50%+、海外用户占比20%+</td>
-    </tr>
-    <tr>
-      <td>第三阶段</td>
-      <td>6-12个月</td>
-      <td>生态闭环</td>
-      <td>100万+ MAU、年收入目标5000万、海外收入占比40%+、行业领先地位</td>
-    </tr>
-  </tbody>
-</table>
+<div class="roadmap-wrap">
+  <div class="roadmap-line" aria-hidden="true"></div>
+
+  <article class="roadmap-item">
+    <div class="roadmap-dot" aria-hidden="true"></div>
+    <div class="roadmap-content">
+      <p class="roadmap-meta">第一阶段 · 0-3个月</p>
+      <h3>上线与验证</h3>
+      <p>5万+ MAU、500+ 作品、20+ 企业客户、月收入100万+、海外市场初步布局</p>
+    </div>
+  </article>
+
+  <article class="roadmap-item">
+    <div class="roadmap-dot" aria-hidden="true"></div>
+    <div class="roadmap-content">
+      <p class="roadmap-meta">第二阶段 · 3-6个月</p>
+      <h3>商业化放大</h3>
+      <p>50万+ MAU、服务收入占比50%+、海外用户占比20%+</p>
+    </div>
+  </article>
+
+  <article class="roadmap-item">
+    <div class="roadmap-dot" aria-hidden="true"></div>
+    <div class="roadmap-content">
+      <p class="roadmap-meta">第三阶段 · 6-12个月</p>
+      <h3>生态闭环</h3>
+      <p>100万+ MAU、年收入目标5000万、海外收入占比40%+、行业领先地位</p>
+    </div>
+  </article>
+</div>
 
 ---
 
