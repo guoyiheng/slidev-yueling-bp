@@ -519,27 +519,36 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 0.8rem;
-  padding-block: 1.8rem;
+  gap: clamp(0.75rem, 1.8vw, 1.15rem);
+  padding-block: clamp(1.4rem, 4vh, 2.4rem);
+  contain: layout paint;
 }
 
 .slidev-page-16 .slidev-layout h1 {
   --uno: my-0 text-center;
   font-size: clamp(2.8rem, 8vw, 4.4rem);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   line-height: 1.06;
-  margin-top: auto;
+  margin: 0;
+  text-wrap: balance;
 }
 
 .slidev-page-16 .slidev-layout h2 {
   --uno: m0 text-center;
   font-size: clamp(1.15rem, 2.5vw, 1.7rem);
   line-height: 1.35;
-  color: var(--bp-muted);
-  margin-top: auto;
+  color: color-mix(in srgb, var(--bp-muted) 80%, var(--bp-primary) 20%);
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  font-variant-numeric: tabular-nums;
+  margin: 0;
+  max-width: min(88%, 680px);
+  text-wrap: balance;
+  opacity: 0.94;
 }
 
 .slidev-page-16 .slidev-layout h2,
@@ -555,10 +564,10 @@
 .slidev-page-19 .slidev-layout h2::before,
 .slidev-page-19 .slidev-layout h2::after {
   content: '';
-  width: clamp(56px, 12vw, 110px);
+  width: clamp(44px, 10vw, 96px);
   height: 1px;
   background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--bp-primary) 52%, var(--bp-muted) 48%), transparent);
-  opacity: 0.8;
+  opacity: 0.72;
 }
 
 .slidev-page-16 .slidev-layout::after {

@@ -7,7 +7,7 @@ company: 跃灵
 date: 2026-03-12
 transition: slide-left
 ---
-
+<!-- TBD 需要截图 -->
 <div class="h-full w-full flex flex-col justify-between">
   <div class="flex items-center gap-2 pt-1">
     <img src="/yueling-logo.svg" alt="跃灵Logo" class="h-7 w-7" />
@@ -138,7 +138,7 @@ transition: slide-left
 
 ##### 03 产品介绍 | Product Introduction
 
-# 我们最有优势的地方
+# 我们最有优势的地方 (TBD需要截图)
 
 - **全链路系统**：从剧本到成片的核心环节在同一平台闭环完成，效率提升更可持续
 - **持续复用**：角色、场景、分镜与素材资产可沉淀复用，越做越快，越做越稳
@@ -151,10 +151,20 @@ transition: slide-left
 
 # 集团协同与组织优势
 
-- **稳定供给**：集团算力与液冷基建协同，保证高峰期仍具备稳定生产能力与交付确定性
-- **成本优势**：上游资源协同降低生成成本，为会员订阅、企业方案和规模化交付留出空间
-- **执行闭环**：算法、产品、运营一体协同，能把客户需求快速转成可复制的生产流程
-- **放量能力**：从创作者场景验证，到团队协作与企业交付扩展，平台具备连续放大的组织基础
+<ul class="page9-core-list">
+  <li data-wm="稳定供给">
+    <span class="item-copy"><strong>稳定供给</strong>：集团算力与液冷基建协同，保证高峰期仍具备稳定生产能力与交付确定性</span>
+  </li>
+  <li data-wm="成本优势">
+    <span class="item-copy"><strong>成本优势</strong>：上游资源协同降低生成成本，为会员订阅、企业方案和规模化交付留出空间</span>
+  </li>
+  <li data-wm="执行闭环">
+    <span class="item-copy"><strong>执行闭环</strong>：算法、产品、运营一体协同，能把客户需求快速转成可复制的生产流程</span>
+  </li>
+  <li data-wm="放量能力">
+    <span class="item-copy"><strong>放量能力</strong>：从创作者场景验证，到团队协作与企业交付扩展，平台具备连续放大的组织基础</span>
+  </li>
+</ul>
 
 ---
 
