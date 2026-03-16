@@ -403,6 +403,87 @@
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
 }
 
+.slidev-page-6 .slidev-layout .page6-spotlight {
+  border: 1px solid rgba(25, 22, 18, 0.12);
+  background:
+    linear-gradient(145deg, rgba(255, 240, 107, 0.12), rgba(255, 255, 255, 0.9) 28%),
+    rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 20px rgba(24, 18, 10, 0.06);
+  padding: 0.82rem 0.92rem;
+  border-radius: 10px;
+}
+
+.slidev-page-6 .slidev-layout .page6-spotlight h3 {
+  margin: 0 0 0.7rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--bp-ink) 86%, var(--bp-primary) 14%);
+}
+
+.slidev-page-6 .slidev-layout .page6-spotlight-list {
+  display: grid;
+  gap: 0.66rem;
+}
+
+.slidev-page-6 .slidev-layout .page6-spotlight-item {
+  margin: 0;
+  padding: 0.48rem 0.56rem 0.54rem;
+  border: 1px solid rgba(25, 22, 18, 0.1);
+  border-left: 3px solid color-mix(in srgb, var(--bp-primary) 68%, var(--bp-accent) 32%);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: none;
+  display: grid;
+  gap: 0.18rem;
+}
+
+.slidev-page-6 .slidev-layout .page6-spotlight-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.slidev-page-6 .slidev-layout .page6-spotlight-head span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--bp-ink) 88%, #5d5048 12%);
+}
+
+.slidev-page-6 .slidev-layout .page6-spotlight-head strong {
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--bp-primary) 82%, #5f1800 18%);
+  white-space: nowrap;
+}
+
+.slidev-page-6 .slidev-layout .page6-bar-track {
+  height: 0.45rem;
+  border-radius: 999px;
+  background: rgba(25, 22, 18, 0.1);
+  overflow: hidden;
+}
+
+.slidev-page-6 .slidev-layout .page6-bar-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #ff6a1d, #ff3402);
+}
+
+.slidev-page-6 .slidev-layout .page6-spotlight-meta {
+  margin: 0;
+  font-size: 0.62rem;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--bp-ink) 76%, #5d5048 24%);
+}
+
+.slidev-page-6 .slidev-layout .page6-chart-note {
+  margin: 0.52rem 0 0;
+  font-size: 0.6rem;
+  color: color-mix(in srgb, var(--bp-ink) 72%, #5d5048 28%);
+  line-height: 1.35;
+}
+
 .slidev-page-5 .slidev-layout li {
   box-shadow: none;
 }
@@ -519,126 +600,59 @@
   background: linear-gradient(90deg, rgba(255, 52, 2, 0.18), rgba(255, 240, 107, 0.28));
 }
 
-.slidev-page-12 .slidev-layout .roadmap-wrap {
+.slidev-page-12 .slidev-layout .timeline-clean {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.9rem;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 2.35rem 0.2rem 0.15rem;
-  text-align: center;
+  margin-top: 1rem;
+  padding-top: 0.6rem;
 }
 
-.slidev-page-12 .slidev-layout .roadmap-line {
+.slidev-page-12 .slidev-layout .timeline-clean__line {
   position: absolute;
-  left: 1.4rem;
-  right: 1.4rem;
-  top: 1.45rem;
-  height: 6px;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #3d3f42, #5a5d61);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+  left: 8%;
+  right: 8%;
+  top: 0.12rem;
+  height: 2px;
+  background: color-mix(in srgb, var(--bp-primary) 24%, #cabfb6 76%);
 }
 
-.slidev-page-12 .slidev-layout .roadmap-line::after {
-  content: '';
-  position: absolute;
-  inset: 1px 6px;
-  border-radius: 999px;
-  background:
-    repeating-linear-gradient(90deg,
-      transparent 0 24px,
-      rgba(255, 255, 255, 0.35) 24px 27px,
-      transparent 27px 48px);
-  opacity: 0.72;
-}
-
-.slidev-page-12 .slidev-layout .roadmap-item {
+.slidev-page-12 .slidev-layout .timeline-clean__item {
   position: relative;
-  margin: 0;
-  padding-top: 0;
+  padding-top: 0.8rem;
 }
 
-.slidev-page-12 .slidev-layout .roadmap-dot {
+.slidev-page-12 .slidev-layout .timeline-clean__node {
   position: absolute;
-  left: 50%;
-  top: 1.45rem;
-  transform: translate(-50%, -50%);
-  width: 2.35rem;
-  height: 2.35rem;
+  top: -0.15rem;
+  left: 0;
+  width: 10px;
+  height: 10px;
   border-radius: 999px;
-  background: linear-gradient(180deg, #fff5bf 0%, #ffd973 30%, #f1a01f 100%);
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 5px rgba(241, 160, 31, 0.18), 0 8px 18px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  background: var(--bp-primary);
+  box-shadow: 0 0 0 4px rgba(255, 52, 2, 0.12);
 }
 
-.slidev-page-12 .slidev-layout .roadmap-dot::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translateX(-50%);
-  width: 3px;
-  height: 24px;
-  background: linear-gradient(180deg, rgba(61, 63, 66, 0.9), rgba(61, 63, 66, 0.2));
-}
-
-.slidev-page-12 .slidev-layout .roadmap-dot::before {
-  content: '';
-  position: absolute;
-  inset: 8px;
-  border-radius: 999px;
-  background: radial-gradient(circle at 30% 30%, #fff, rgba(255, 255, 255, 0.45));
-}
-
-.slidev-page-12 .slidev-layout .roadmap-content {
-  border: 2px solid rgba(61, 63, 66, 0.28);
-  border-radius: 10px;
-  padding: 0.74rem 0.76rem 0.78rem;
-  background: #fff;
-  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.08);
-  min-height: 162px;
-  margin-top: 3.02rem;
-  position: relative;
-}
-
-.slidev-page-12 .slidev-layout .roadmap-content::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: -10px;
-  transform: translateX(-50%) rotate(45deg);
-  width: 16px;
-  height: 16px;
-  background: #fff;
-  border-left: 2px solid rgba(61, 63, 66, 0.28);
-  border-top: 2px solid rgba(61, 63, 66, 0.28);
-}
-
-.slidev-page-12 .slidev-layout .roadmap-meta {
-  margin: 0;
-  font-size: 0.67rem;
+.slidev-page-12 .slidev-layout .timeline-clean__time {
+  margin: 0 0 0.3rem;
+  font-size: 0.65rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #4b4e53;
+  letter-spacing: 0.06em;
+  color: color-mix(in srgb, var(--bp-muted) 76%, var(--bp-primary) 24%);
 }
 
-.slidev-page-12 .slidev-layout .roadmap-content h3 {
-  margin: 0.28rem 0 0.24rem;
-  font-size: 1.02rem;
-  line-height: 1.22;
+.slidev-page-12 .slidev-layout .timeline-clean__item h3 {
+  margin: 0 0 0.24rem;
+  font-size: 1rem;
+  line-height: 1.24;
   font-family: 'Noto Serif SC', 'Songti SC', serif;
-  font-weight: 700;
-  color: #2a2d31;
+  color: color-mix(in srgb, var(--bp-ink) 92%, var(--bp-primary) 8%);
 }
 
-.slidev-page-12 .slidev-layout .roadmap-content p {
+.slidev-page-12 .slidev-layout .timeline-clean__item p {
   margin: 0;
-  line-height: 1.38;
-  color: #35373b;
+  line-height: 1.42;
 }
 
 .slidev-page-16 .slidev-layout {
@@ -664,12 +678,15 @@
 
 .slidev-page-16 .slidev-layout h2 {
   --uno: m0 text-center;
-  font-size: clamp(0.98rem, 1.9vw, 1.38rem);
-  line-height: 1.35;
-  color: color-mix(in srgb, var(--bp-muted) 80%, var(--bp-primary) 20%);
-  background-image: linear-gradient(180deg,
-      color-mix(in srgb, var(--bp-muted) 66%, var(--bp-primary) 34%) 0%,
-      color-mix(in srgb, var(--bp-muted) 88%, var(--bp-primary) 12%) 100%);
+  font-size: clamp(0.76rem, 1.35vw, 0.98rem);
+  line-height: 1.3;
+  color: color-mix(in srgb, var(--bp-muted) 72%, var(--bp-primary) 28%);
+  background-image: linear-gradient(120deg,
+      color-mix(in srgb, var(--bp-primary) 58%, #ff9f43 42%) 0%,
+      color-mix(in srgb, var(--bp-accent) 42%, #ffffff 58%) 52%,
+      color-mix(in srgb, var(--bp-primary) 42%, #ff6f3c 58%) 100%);
+  background-size: 180% 180%;
+  animation: page16-date-gradient-shift 18s ease-in-out infinite;
   font-family: 'Noto Serif SC', 'Songti SC', serif;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -678,6 +695,20 @@
   max-width: min(88%, 680px);
   text-wrap: balance;
   opacity: 0.94;
+}
+
+@keyframes page16-date-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
@@ -729,68 +760,38 @@
     grid-template-columns: 1fr;
   }
 
-  .slidev-page-12 .slidev-layout .roadmap-wrap {
+  .slidev-page-6 .slidev-layout .page6-spotlight {
+    padding: 0.72rem 0.78rem;
+  }
+
+  .slidev-page-6 .slidev-layout .page6-spotlight-item {
+    padding: 0.44rem 0.48rem 0.5rem;
+  }
+
+  .slidev-page-12 .slidev-layout .timeline-clean {
     grid-template-columns: 1fr;
-    gap: 0.86rem;
-    max-width: 100%;
-    padding: 0.35rem 0 0.45rem 1.62rem;
-    text-align: left;
-  }
-
-  .slidev-page-12 .slidev-layout .roadmap-line {
-    left: 0.88rem;
-    right: auto;
-    top: 0.45rem;
-    bottom: 0.25rem;
-    width: 6px;
-    height: auto;
-    background: linear-gradient(180deg, #3d3f42, #5a5d61);
-    box-shadow: inset 1px 0 0 rgba(255, 255, 255, 0.2), inset -1px 0 0 rgba(0, 0, 0, 0.2);
-  }
-
-  .slidev-page-12 .slidev-layout .roadmap-line::after {
-    inset: 6px 1px;
-    background:
-      repeating-linear-gradient(180deg,
-        transparent 0 24px,
-        rgba(255, 255, 255, 0.35) 24px 27px,
-        transparent 27px 48px);
-  }
-
-  .slidev-page-12 .slidev-layout .roadmap-item {
+    gap: 0.76rem;
+    margin-top: 0.7rem;
     padding-top: 0;
   }
 
-  .slidev-page-12 .slidev-layout .roadmap-dot {
-    left: -1.56rem;
-    top: 1rem;
-    transform: none;
-    width: 1.72rem;
-    height: 1.72rem;
-    border-width: 2px;
-    box-shadow: 0 0 0 4px rgba(241, 160, 31, 0.16);
+  .slidev-page-12 .slidev-layout .timeline-clean__line {
+    left: 0.3rem;
+    right: auto;
+    top: 0.2rem;
+    width: 4px;
+    height: calc(100% - 0.5rem);
+    background: color-mix(in srgb, var(--bp-primary) 24%, #cabfb6 76%);
   }
 
-  .slidev-page-12 .slidev-layout .roadmap-dot::after {
-    left: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 16px;
-    height: 3px;
-    background: linear-gradient(90deg, rgba(61, 63, 66, 0.9), rgba(61, 63, 66, 0.2));
+  .slidev-page-12 .slidev-layout .timeline-clean__item {
+    padding-top: 0;
+    padding-left: 1.1rem;
   }
 
-  .slidev-page-12 .slidev-layout .roadmap-content::before {
-    left: -10px;
-    top: 14px;
-    transform: rotate(-45deg);
-  }
-
-  .slidev-page-12 .slidev-layout .roadmap-content {
-    border: 2px solid rgba(61, 63, 66, 0.28);
-    padding: 0.58rem 0.78rem 0.68rem;
-    min-height: auto;
-    margin-top: 0;
+  .slidev-page-12 .slidev-layout .timeline-clean__node {
+    top: 0.18rem;
+    left: 0;
   }
 }
 

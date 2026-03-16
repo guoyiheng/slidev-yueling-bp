@@ -6,6 +6,7 @@ class: text-left
 company: 跃灵
 date: 2026-03-12
 transition: slide-left
+
 ---
 <!-- TBD 需要截图 -->
 <div class="h-full w-full flex flex-col justify-between">
@@ -108,10 +109,46 @@ transition: slide-left
 
 # 痛点聚焦
 
-- **工具割裂**：日均跨平台切换 2.3 小时，信息损耗超 35%（2025 内容创作者效率报告）
-- **质量不稳**：返工率 45%，单条内容平均修改 5.2 次（IDC 中国）
-- **协作低效**：沟通成本占人力成本 38%，50% 企业因此放弃扩产（艾瑞咨询）
-- **交付缓慢**：短视频平均生产成本 1200 元，边际成本降速仅 12%（头豹研究院）
+<section class="page6-spotlight" aria-label="关键痛点图表">
+  <h3>关键痛点信号</h3>
+
+  <div class="page6-spotlight-list">
+    <article class="page6-spotlight-item">
+      <div class="page6-spotlight-head">
+        <span>质量不稳</span>
+        <strong>45%</strong>
+      </div>
+      <div class="page6-bar-track"><span style="width: 90%"></span></div>
+      <p class="page6-spotlight-meta">返工率 45%，平均修改 5.2 次/条，来源：IDC 中国</p>
+    </article>
+    <article class="page6-spotlight-item">
+      <div class="page6-spotlight-head">
+        <span>协作低效</span>
+        <strong>38%</strong>
+      </div>
+      <div class="page6-bar-track"><span style="width: 76%"></span></div>
+      <p class="page6-spotlight-meta">沟通成本占人力 38%，50% 企业因此放弃扩产，来源：艾瑞咨询</p>
+    </article>
+    <article class="page6-spotlight-item">
+      <div class="page6-spotlight-head">
+        <span>工具割裂</span>
+        <strong>35%</strong>
+      </div>
+      <div class="page6-bar-track"><span style="width: 70%"></span></div>
+      <p class="page6-spotlight-meta">跨平台协作带来 35% 信息损耗，来源：2025 内容创作者效率报告</p>
+    </article>
+    <article class="page6-spotlight-item">
+      <div class="page6-spotlight-head">
+        <span>交付缓慢</span>
+        <strong>1200元/条</strong>
+      </div>
+      <div class="page6-bar-track"><span style="width: 84%"></span></div>
+      <p class="page6-spotlight-meta">短视频平均生产成本 1200 元/条，来源：头豹研究院</p>
+    </article>
+  </div>
+
+  <p class="page6-chart-note">注：图中长度用于表达痛点强度与业务压力，金额项按影响程度折算展示。</p>
+</section>
 
 ---
 
@@ -138,7 +175,7 @@ transition: slide-left
 
 ##### 03 产品介绍 | Product Introduction
 
-# 我们最有优势的地方 (TBD需要截图)
+# 我们最有优势的地方 (待补充截图)
 
 - **全链路系统**：从剧本到成片的核心环节在同一平台闭环完成，效率提升更可持续
 - **持续复用**：角色、场景、分镜与素材资产可沉淀复用，越做越快，越做越稳
@@ -243,36 +280,30 @@ transition: slide-left
 
 # 2026阶段目标
 
-<div class="roadmap-wrap">
-  <div class="roadmap-line" aria-hidden="true"></div>
+<section class="timeline-clean" aria-label="2026阶段目标时间轴">
+  <div class="timeline-clean__line" aria-hidden="true"></div>
 
-  <article class="roadmap-item">
-    <div class="roadmap-dot" aria-hidden="true"></div>
-    <div class="roadmap-content">
-      <p class="roadmap-meta">第一阶段 · 0-3个月</p>
-      <h3>上线与验证</h3>
-      <p>5万+ MAU、500+ 作品、20+ 企业客户、月收入100万+、海外市场初步布局</p>
-    </div>
+  <article class="timeline-clean__item is-step-1">
+    <div class="timeline-clean__node" aria-hidden="true"></div>
+    <p class="timeline-clean__time">第一阶段 · 0-3个月</p>
+    <h3>上线与验证</h3>
+    <p>5万+ MAU、500+ 作品、20+ 企业客户、月收入100万+、海外市场初步布局</p>
   </article>
 
-  <article class="roadmap-item">
-    <div class="roadmap-dot" aria-hidden="true"></div>
-    <div class="roadmap-content">
-      <p class="roadmap-meta">第二阶段 · 3-6个月</p>
-      <h3>商业化放大</h3>
-      <p>50万+ MAU、服务收入占比50%+、海外用户占比20%+</p>
-    </div>
+  <article class="timeline-clean__item is-step-2">
+    <div class="timeline-clean__node" aria-hidden="true"></div>
+    <p class="timeline-clean__time">第二阶段 · 3-6个月</p>
+    <h3>商业化放大</h3>
+    <p>50万+ MAU、服务收入占比50%+、海外用户占比20%+</p>
   </article>
 
-  <article class="roadmap-item">
-    <div class="roadmap-dot" aria-hidden="true"></div>
-    <div class="roadmap-content">
-      <p class="roadmap-meta">第三阶段 · 6-12个月</p>
-      <h3>生态闭环</h3>
-      <p>100万+ MAU、年收入目标5000万、海外收入占比40%+、行业领先地位</p>
-    </div>
+  <article class="timeline-clean__item is-step-3">
+    <div class="timeline-clean__node" aria-hidden="true"></div>
+    <p class="timeline-clean__time">第三阶段 · 6-12个月</p>
+    <h3>生态闭环</h3>
+    <p>100万+ MAU、年收入目标5000万、海外收入占比40%+、行业领先地位</p>
   </article>
-</div>
+</section>
 
 ---
 
