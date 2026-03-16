@@ -390,7 +390,7 @@ transition: slide-left
     <span class="item-copy"><strong>全链路闭环</strong>：从剧本到成片在同一平台完成，对手工具采越长，我们的效率优势越明显</span>
   </li>
   <li data-wm="资产复用飞轮" v-click>
-    <span class="item-copy"><strong>资产复用飞轮</strong>：角色、场景、分閕持续沉淀，用户粘性与生产效率随使用时间同步增长</span>
+    <span class="item-copy"><strong>资产复用飞轮</strong>：角色、场景、物品持续沉淀，用户粘性与生产效率随使用时间同步增长</span>
   </li>
   <li data-wm="C端+B端双轮" v-click>
     <span class="item-copy"><strong>C端+B端双轮</strong>：个人创作者验证产品、专业团队放大收入、企业客户貢献稳定 ARR，三层用户结构降低波动风险</span>
