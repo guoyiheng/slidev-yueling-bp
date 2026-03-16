@@ -1,0 +1,28 @@
+{
+  "name": "yueling-bp-slidev",
+  "version": "1.0.0",
+  "description": "Yueling AI external business BP slide deck",
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build",
+    "export": "slidev export"
+  },
+  "keywords": [
+    "slidev",
+    "business-plan",
+    "pitch-deck"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@slidev/cli": "^52.14.1",
+    "codemirror-theme-vars": "^0.1.2",
+    "prism-theme-vars": "^0.2.5"
+  },
+  "dependencies": {
+    "@fontsource/lxgw-wenkai": "^5.2.5",
+    "@fontsource/noto-sans-sc": "^5.2.9",
+    "@fontsource/noto-serif-sc": "^5.2.9",
+    "@slidev/theme-default": "^0.25.0"
+  }
+}

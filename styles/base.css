@@ -1,0 +1,596 @@
+:root {
+  --bp-primary: #ff3402;
+  --bp-accent: #fff06b;
+  --bp-ink: #191612;
+  --bp-muted: #6f6660;
+  --bp-line: rgba(25, 22, 18, 0.18);
+  --bp-surface: #fffcf6;
+}
+
+.slidev-layout {
+  --uno: text-[0.9rem] leading-[1.55];
+  color: var(--bp-ink);
+  position: relative;
+  font-family: 'Noto Sans SC', 'Avenir Next', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  background:
+    radial-gradient(110% 70% at 100% 0%, rgba(255, 240, 107, 0.3), transparent 58%),
+    radial-gradient(85% 50% at 0% 100%, rgba(255, 52, 2, 0.06), transparent 60%),
+    var(--bp-surface);
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    --uno: select-none;
+  }
+
+  pre,
+  code,
+  p,
+  li,
+  td,
+  th,
+  a {
+    --uno: select-text;
+  }
+}
+
+.slidev-layout>* {
+  position: relative;
+  z-index: 1;
+}
+
+.slidev-layout::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(90deg, var(--bp-primary) 0%, color-mix(in srgb, var(--bp-primary) 72%, var(--bp-accent) 28%) 58%, var(--bp-accent) 100%);
+  opacity: 0.95;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.slidev-layout h1 {
+  --uno: text-center my-8;
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: color-mix(in srgb, var(--bp-ink) 92%, var(--bp-primary) 8%);
+}
+
+.slidev-page-1 .slidev-layout h1,
+.slidev-page-2 .slidev-layout h1 {
+  --uno: text-left my-8;
+}
+
+.slidev-layout.default h5 {
+  --uno: mb-4;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--bp-muted);
+}
+
+.toc-grid {
+  --uno: mt-6 grid gap-3 max-w-110;
+  grid-template-columns: 1fr;
+}
+
+.toc-btn {
+  --uno: w-full text-left px-4 py-3 rounded-lg;
+  border: 1px solid color-mix(in srgb, var(--bp-primary) 20%, #000 10%);
+  background: color-mix(in srgb, white 82%, var(--bp-accent) 18%);
+  color: color-mix(in srgb, var(--bp-ink) 86%, var(--bp-primary) 14%);
+  font-weight: 600;
+  transition: transform 220ms cubic-bezier(0.25, 1, 0.5, 1),
+    box-shadow 220ms cubic-bezier(0.25, 1, 0.5, 1),
+    background-color 220ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.toc-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(24, 18, 10, 0.12);
+  background: color-mix(in srgb, white 72%, var(--bp-accent) 28%);
+}
+
+.toc-btn:active {
+  transform: translateY(0);
+}
+
+.toc-btn:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--bp-primary) 72%, #000 28%);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .toc-btn {
+    transition: none;
+  }
+
+  .toc-btn:hover,
+  .toc-btn:active {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+.slidev-layout p,
+.slidev-layout li {
+  color: color-mix(in srgb, var(--bp-ink) 90%, #5d5048 10%);
+}
+
+.slidev-layout ul li::marker {
+  color: var(--bp-primary);
+}
+
+.slidev-layout a {
+  color: color-mix(in srgb, var(--bp-primary) 88%, #8a2200 12%);
+  text-underline-offset: 0.18em;
+}
+
+.slidev-layout a:hover {
+  color: color-mix(in srgb, var(--bp-primary) 75%, #000 25%);
+}
+
+.slidev-layout a:focus-visible,
+.slidev-layout button:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--bp-primary) 72%, #000 28%);
+  outline-offset: 2px;
+}
+
+.biz-table,
+.competitor-table {
+  --uno: w-full text-[0.78rem];
+  background: rgba(255, 255, 255, 0.64);
+}
+
+.biz-table th,
+.biz-table td,
+.competitor-table th,
+.competitor-table td {
+  --uno: px-2.5 py-2 align-middle text-center;
+  font-weight: 400;
+  border-bottom: 1px solid var(--bp-line);
+}
+
+.biz-table thead th,
+.competitor-table thead th {
+  font-weight: 700;
+  color: color-mix(in srgb, var(--bp-ink) 86%, var(--bp-primary) 14%);
+  background: linear-gradient(180deg, rgba(255, 240, 107, 0.38), rgba(255, 240, 107, 0.14));
+}
+
+.biz-table tbody tr:nth-child(even),
+.competitor-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.56);
+}
+
+.competitor-table tbody td:first-child {
+  font-weight: 700;
+  --uno: whitespace-nowrap;
+}
+
+.biz-table small,
+.competitor-table small {
+  --uno: text-[0.66rem] opacity-80;
+}
+
+/* Slide-specific layout system: same copy, different page composition. */
+.slidev-page-2 .slidev-layout {
+  display: block;
+}
+
+
+.slidev-page-2 .slidev-layout ul {
+  --uno: list-none m0 p0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.72rem;
+  max-width: 78%;
+}
+
+.slidev-page-2 .slidev-layout li {
+  margin: 0;
+  padding: 0.78rem 0.95rem;
+  border-left: 4px solid color-mix(in srgb, var(--bp-primary) 72%, var(--bp-accent) 28%);
+  background: rgba(255, 255, 255, 0.82);
+  font-weight: 600;
+  box-shadow: 0 10px 18px rgba(24, 18, 10, 0.05);
+}
+
+.slidev-page-1 .slidev-layout>div {
+  position: relative;
+  border: 0;
+  border-radius: 14px;
+  background:
+    linear-gradient(132deg, rgba(255, 240, 107, 0.2), rgba(255, 255, 255, 0.78) 46%),
+    rgba(255, 255, 255, 0.72);
+  box-shadow: 0 22px 42px rgba(24, 18, 10, 0.12);
+  padding: 2rem 2.2rem;
+  overflow: hidden;
+}
+
+.slidev-page-1 .slidev-layout>div::before {
+  content: '';
+  position: absolute;
+  inset: auto -80px -70px auto;
+  width: 220px;
+  height: 220px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, rgba(255, 52, 2, 0.18), rgba(255, 52, 2, 0.02) 62%);
+}
+
+.slidev-page-1 .slidev-layout>div::after {
+  content: '';
+  position: absolute;
+  left: 2.2rem;
+  bottom: 1.2rem;
+  width: 180px;
+  height: 3px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--bp-primary) 78%, var(--bp-accent) 22%), transparent);
+  opacity: 0.55;
+}
+
+.slidev-page-1 .slidev-layout h1 {
+  --uno: text-left;
+  margin: 0 0 0.45rem;
+  font-size: clamp(2.25rem, 6.2vw, 3.8rem);
+  line-height: 1.05;
+}
+
+.slidev-page-1 .slidev-layout p {
+  line-height: 1.5;
+}
+
+.slidev-page-3 .slidev-layout li,
+.slidev-page-5 .slidev-layout li,
+.slidev-page-7 .slidev-layout li,
+.slidev-page-9 .slidev-layout li,
+.slidev-page-14 .slidev-layout li,
+.slidev-page-15 .slidev-layout li {
+  padding-left: 0.88rem;
+}
+
+.slidev-page-3 .slidev-layout,
+.slidev-page-4 .slidev-layout,
+.slidev-page-5 .slidev-layout,
+.slidev-page-6 .slidev-layout,
+.slidev-page-7 .slidev-layout,
+.slidev-page-8 .slidev-layout,
+.slidev-page-9 .slidev-layout,
+.slidev-page-10 .slidev-layout,
+.slidev-page-14 .slidev-layout,
+.slidev-page-15 .slidev-layout {
+  display: block;
+}
+
+.slidev-page-3 .slidev-layout ul,
+.slidev-page-5 .slidev-layout ul,
+.slidev-page-7 .slidev-layout ul,
+.slidev-page-9 .slidev-layout ul,
+.slidev-page-14 .slidev-layout ul,
+.slidev-page-15 .slidev-layout ul {
+  --uno: list-none m0 p0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.7rem;
+}
+
+.slidev-page-4 .slidev-layout ul,
+.slidev-page-6 .slidev-layout ul,
+.slidev-page-8 .slidev-layout ul,
+.slidev-page-10 .slidev-layout ul {
+  --uno: list-none m0 p0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.slidev-page-3 .slidev-layout li,
+.slidev-page-4 .slidev-layout li,
+.slidev-page-5 .slidev-layout li,
+.slidev-page-6 .slidev-layout li,
+.slidev-page-7 .slidev-layout li,
+.slidev-page-8 .slidev-layout li,
+.slidev-page-9 .slidev-layout li,
+.slidev-page-10 .slidev-layout li,
+.slidev-page-14 .slidev-layout li,
+.slidev-page-15 .slidev-layout li {
+  margin: 0;
+  padding: 0.72rem 0.88rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(25, 22, 18, 0.12);
+}
+
+.slidev-page-3 .slidev-layout ul,
+.slidev-page-5 .slidev-layout ul,
+.slidev-page-7 .slidev-layout ul,
+.slidev-page-9 .slidev-layout ul,
+.slidev-page-14 .slidev-layout ul,
+.slidev-page-15 .slidev-layout ul {
+  counter-reset: page3-item;
+}
+
+.slidev-page-3 .slidev-layout li,
+.slidev-page-5 .slidev-layout li,
+.slidev-page-7 .slidev-layout li,
+.slidev-page-9 .slidev-layout li,
+.slidev-page-14 .slidev-layout li,
+.slidev-page-15 .slidev-layout li {
+  position: relative;
+  overflow: hidden;
+  padding-right: 1.1rem;
+  padding-bottom: 1.22rem;
+  counter-increment: page3-item;
+}
+
+.slidev-page-3 .slidev-layout .item-copy,
+.slidev-page-5 .slidev-layout .item-copy,
+.slidev-page-7 .slidev-layout .item-copy,
+.slidev-page-9 .slidev-layout .item-copy,
+.slidev-page-14 .slidev-layout .item-copy,
+.slidev-page-15 .slidev-layout .item-copy {
+  position: relative;
+  z-index: 2;
+}
+
+.slidev-page-3 .slidev-layout li::before,
+.slidev-page-5 .slidev-layout li::before,
+.slidev-page-7 .slidev-layout li::before,
+.slidev-page-9 .slidev-layout li::before,
+.slidev-page-14 .slidev-layout li::before,
+.slidev-page-15 .slidev-layout li::before {
+  content: attr(data-wm);
+  position: absolute;
+  left: 0.54rem;
+  right: 0.9rem;
+  bottom: 0.02rem;
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  font-size: clamp(1.8rem, 4.6vw, 2.8rem);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  color: color-mix(in srgb, var(--bp-primary) 18%, #ffffff 82%);
+  opacity: 0.34;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.slidev-page-3 .slidev-layout li::after,
+.slidev-page-5 .slidev-layout li::after,
+.slidev-page-7 .slidev-layout li::after,
+.slidev-page-9 .slidev-layout li::after,
+.slidev-page-14 .slidev-layout li::after,
+.slidev-page-15 .slidev-layout li::after {
+  content: counter(page3-item, decimal-leading-zero);
+  position: absolute;
+  right: 0.42rem;
+  bottom: -0.06rem;
+  font-family: 'Noto Serif SC', 'Songti SC', serif;
+  font-size: clamp(2.8rem, 6.2vw, 3.8rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  color: color-mix(in srgb, var(--bp-primary) 34%, #ffffff 66%);
+  opacity: 0.3;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.slidev-page-3 .slidev-layout li,
+.slidev-page-5 .slidev-layout li,
+.slidev-page-7 .slidev-layout li,
+.slidev-page-9 .slidev-layout li,
+.slidev-page-14 .slidev-layout li,
+.slidev-page-15 .slidev-layout li {
+  border-left: 4px solid color-mix(in srgb, var(--bp-primary) 72%, var(--bp-accent) 28%);
+}
+
+.slidev-page-4 .slidev-layout li,
+.slidev-page-6 .slidev-layout li,
+.slidev-page-8 .slidev-layout li,
+.slidev-page-10 .slidev-layout li {
+  border-left: 4px solid color-mix(in srgb, var(--bp-primary) 72%, var(--bp-accent) 28%);
+}
+
+.slidev-page-5 .slidev-layout li,
+.slidev-page-6 .slidev-layout li {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.05);
+}
+
+.slidev-page-5 .slidev-layout li {
+  box-shadow: none;
+}
+
+.slidev-page-8 .slidev-layout li {
+  background:
+    linear-gradient(135deg, rgba(255, 240, 107, 0.2), rgba(255, 255, 255, 0.72) 42%),
+    rgba(255, 255, 255, 0.78);
+}
+
+.slidev-page-10 .slidev-layout li {
+  font-weight: 600;
+}
+
+.slidev-layout li strong {
+  display: inline;
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+/* ── Page 4: 目标用户 — top image + bottom description cards ─── */
+.slidev-page-4 .slidev-layout ul.target-user-grid {
+  --uno: list-none m0 p0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.slidev-page-4 .slidev-layout ul.target-user-grid li {
+  margin: 0;
+  padding: 0.78rem 0.82rem 0.92rem;
+  border: 1px solid rgba(25, 22, 18, 0.1);
+  border-top: none;
+  border-left: none;
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 240, 107, 0.16), rgba(255, 255, 255, 0.9) 34%),
+    rgba(255, 255, 255, 0.92);
+  box-shadow: 0 12px 24px rgba(24, 18, 10, 0.08);
+  display: grid;
+  grid-template-rows: 128px auto;
+  gap: 0.62rem;
+  justify-items: center;
+  align-items: start;
+}
+
+.slidev-page-4 .slidev-layout .target-user-illustration {
+  width: 100%;
+  height: 128px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 0.4rem;
+}
+
+.slidev-page-4 .slidev-layout ul.target-user-grid li p {
+  margin: 0;
+  line-height: 1.45;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+  color: color-mix(in srgb, var(--bp-ink) 92%, #5d5048 8%);
+}
+
+.slidev-page-4 .slidev-layout ul.target-user-grid li strong {
+  display: block;
+  margin-bottom: 0.28rem;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--bp-primary) 84%, #611700 16%);
+}
+
+.slidev-page-11 .slidev-layout,
+.slidev-page-12 .slidev-layout,
+.slidev-page-13 .slidev-layout {
+  display: block;
+}
+
+.slidev-page-11 .biz-table,
+.slidev-page-12 .biz-table,
+.slidev-page-13 .competitor-table {
+  width: 100%;
+  box-shadow: 0 14px 30px rgba(24, 18, 10, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.slidev-page-11 .slidev-layout h1,
+.slidev-page-12 .slidev-layout h1,
+.slidev-page-13 .slidev-layout h1 {
+  position: relative;
+  padding-bottom: 0.35rem;
+}
+
+.slidev-page-11 .slidev-layout h1::after,
+.slidev-page-12 .slidev-layout h1::after,
+.slidev-page-13 .slidev-layout h1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -0.05rem;
+  width: min(34%, 240px);
+  height: 2px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--bp-primary) 72%, var(--bp-accent) 28%), transparent);
+}
+
+.slidev-page-13 .competitor-table thead th {
+  background: linear-gradient(90deg, rgba(255, 52, 2, 0.18), rgba(255, 240, 107, 0.28));
+}
+
+.slidev-page-16 .slidev-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 0.8rem;
+  padding-block: 1.8rem;
+}
+
+.slidev-page-16 .slidev-layout h1 {
+  --uno: my-0 text-center;
+  font-size: clamp(2.8rem, 8vw, 4.4rem);
+  letter-spacing: 0.08em;
+  line-height: 1.06;
+  margin-top: auto;
+}
+
+.slidev-page-16 .slidev-layout h2 {
+  --uno: m0 text-center;
+  font-size: clamp(1.15rem, 2.5vw, 1.7rem);
+  line-height: 1.35;
+  color: var(--bp-muted);
+  margin-top: auto;
+}
+
+.slidev-page-16 .slidev-layout h2,
+.slidev-page-19 .slidev-layout h2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.slidev-page-16 .slidev-layout h2::before,
+.slidev-page-16 .slidev-layout h2::after,
+.slidev-page-19 .slidev-layout h2::before,
+.slidev-page-19 .slidev-layout h2::after {
+  content: '';
+  width: clamp(56px, 12vw, 110px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--bp-primary) 52%, var(--bp-muted) 48%), transparent);
+  opacity: 0.8;
+}
+
+.slidev-page-16 .slidev-layout::after {
+  content: none;
+}
+
+@media (max-width: 960px) {
+  .slidev-layout {
+    --uno: text-[0.86rem] leading-[1.6];
+  }
+
+  .biz-table,
+  .competitor-table {
+    --uno: text-[0.72rem];
+  }
+
+  .slidev-page-2 .slidev-layout ul,
+  .slidev-page-6 .slidev-layout ul,
+  .slidev-page-8 .slidev-layout ul,
+  .slidev-page-10 .slidev-layout ul,
+  .slidev-page-15 .slidev-layout ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .slidev-layout *,
+  .slidev-page * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
