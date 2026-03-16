@@ -538,7 +538,7 @@
 
 .slidev-page-16 .slidev-layout h2 {
   --uno: m0 text-center;
-  font-size: clamp(1.15rem, 2.5vw, 1.7rem);
+  font-size: clamp(0.98rem, 1.9vw, 1.38rem);
   line-height: 1.35;
   color: color-mix(in srgb, var(--bp-muted) 80%, var(--bp-primary) 20%);
   background-image: linear-gradient(180deg,
