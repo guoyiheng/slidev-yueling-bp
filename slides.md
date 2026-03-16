@@ -32,7 +32,7 @@ transition: slide-left
 
 # 目录
 
-<div class="toc-grid">
+<div class="toc-grid toc-grid--animate">
   <button class="toc-btn" @click="$nav.go(3)">01 平台简介</button>
   <button class="toc-btn" @click="$nav.go(5)">02 市场机会</button>
   <button class="toc-btn" @click="$nav.go(7)">03 产品介绍</button>
@@ -47,16 +47,16 @@ transition: slide-left
 # 平台定位
 
 <ul class="page3-core-list">
-  <li data-wm="全链路 AI 内容生产平台">
+  <li data-wm="全链路 AI 内容生产平台" v-click>
     <span class="item-copy">跃灵AI 是面向创作者与内容团队的<strong>全链路 AI 内容生产平台</strong></span>
   </li>
-  <li data-wm="剧本驱动 + 流水线编排">
-    <span class="item-copy">以<strong>“剧本驱动 + 流水线编排”</strong>连接创意、生产、交付全流程</span>
+  <li data-wm="剧本驱动 + 流水线编排" v-click>
+    <span class="item-copy">以<strong>"剧本驱动 + 流水线编排"</strong>连接创意、生产、交付全流程</span>
   </li>
-  <li data-wm="可管理 可协同 可复用">
+  <li data-wm="可管理 可协同 可复用" v-click>
     <span class="item-copy">平台核心：<strong>可管理、可协同、可复用</strong></span>
   </li>
-  <li data-wm="生产效率">
+  <li data-wm="生产效率" v-click>
     <span class="item-copy">使命：以 AI 流水线重构内容<strong>生产效率</strong>，支撑稳定规模化增长</span>
   </li>
 </ul>
@@ -68,15 +68,15 @@ transition: slide-left
 # 目标用户
 
 <ul class="target-user-grid">
-  <li>
+  <li v-click>
     <img src="/undraw-target-creator.svg" alt="个人创作者" class="target-user-illustration" />
     <p><strong>个人创作者</strong>更低门槛、更快出片，把创意快速转为可发布内容</p>
   </li>
-  <li>
+  <li v-click>
     <img src="/undraw-target-team.svg" alt="专业团队" class="target-user-illustration" />
     <p><strong>专业团队</strong>多人并行协作，提升角色一致性与批量生产效率</p>
   </li>
-  <li>
+  <li v-click>
     <img src="/undraw-target-enterprise.svg" alt="企业客户" class="target-user-illustration" />
     <p><strong>企业客户</strong>标准化流程与权限治理，实现可控成本与稳定交付</p>
   </li>
@@ -89,16 +89,16 @@ transition: slide-left
 # 机会判断
 
 <ul class="page5-core-list">
-  <li data-wm="市场规模">
+  <li data-wm="市场规模" v-click>
     <span class="item-copy"><strong>市场规模</strong>：2025 中国 AIGC 市场规模 4800 亿，内容生产类占 41.3%（艾瑞咨询）</span>
   </li>
-  <li data-wm="需求爆发">
+  <li data-wm="需求爆发" v-click>
     <span class="item-copy"><strong>需求爆发</strong>：泛娱乐短视频日播放 1.2 万亿次，漫剧创作量同比 +180%（头豹研究院）</span>
   </li>
-  <li data-wm="改造提速">
+  <li data-wm="改造提速" v-click>
     <span class="item-copy"><strong>改造提速</strong>：78% 内容团队启动工业化改造，仅 32% 完成全链路数字化（易观分析）</span>
   </li>
-  <li data-wm="窗口已开">
+  <li data-wm="窗口已开" v-click>
     <span class="item-copy"><strong>窗口已开</strong>：平台型 AI 基础设施将承接下一轮产能与商业化增量</span>
   </li>
 </ul>
@@ -110,7 +110,7 @@ transition: slide-left
 # 痛点聚焦
 
 <section class="page6-board" aria-label="痛点聚焦四象限卡片">
-  <article class="page6-card page6-card--donut">
+  <article class="page6-card page6-card--donut" v-click>
     <div class="page6-card-head">
       <h3><ph-link-break-duotone class="page6-card-icon" />工具割裂</h3>
     </div>
@@ -123,7 +123,7 @@ transition: slide-left
     <p class="page6-card-copy">日均跨平台切换 2.3 小时</p>
     <p class="page6-card-source">来源：2025 内容创作者效率报告</p>
   </article>
-  <article class="page6-card page6-card--progress">
+  <article class="page6-card page6-card--progress" v-click>
     <div class="page6-card-head">
       <h3><ph-warning-circle-duotone class="page6-card-icon" />质量不稳</h3>
     </div>
@@ -139,7 +139,7 @@ transition: slide-left
     <p class="page6-card-copy">单条内容平均修改 5.2 次</p>
     <p class="page6-card-source">来源：IDC 中国</p>
   </article>
-  <article class="page6-card page6-card--donut">
+  <article class="page6-card page6-card--donut" v-click>
     <div class="page6-card-head">
       <h3><ph-users-three-duotone class="page6-card-icon" />协作低效</h3>
     </div>
@@ -152,7 +152,7 @@ transition: slide-left
     <p class="page6-card-copy">50% 企业因此放弃扩产</p>
     <p class="page6-card-source">来源：艾瑞咨询</p>
   </article>
-  <article class="page6-card page6-card--columns">
+  <article class="page6-card page6-card--columns" v-click>
     <div class="page6-card-head">
       <h3><ph-hourglass-medium-duotone class="page6-card-icon" />交付缓慢</h3>
     </div>
@@ -176,16 +176,16 @@ transition: slide-left
 # 从痛点到产品解法
 
 <ul class="page7-core-list">
-  <li data-wm="工具割裂">
+  <li data-wm="工具割裂" v-click>
     <span class="item-copy">针对<strong>工具割裂</strong>：以剧本为主线串联创意、分镜、角色、视频、配音与交付，减少跨平台切换与信息断层</span>
   </li>
-  <li data-wm="质量不稳">
+  <li data-wm="质量不稳" v-click>
     <span class="item-copy">针对<strong>质量不稳</strong>：提供角色、场景、道具和镜头一致性控制，降低返工率与反复修改成本</span>
   </li>
-  <li data-wm="协作低效">
+  <li data-wm="协作低效" v-click>
     <span class="item-copy">针对<strong>协作低效</strong>：把任务节点、素材资产、版本状态与权限管理纳入同一流水线，支撑多人并行协作</span>
   </li>
-  <li data-wm="交付缓慢">
+  <li data-wm="交付缓慢" v-click>
     <span class="item-copy">针对<strong>交付缓慢</strong>：通过模板化拆解、批量生成与非线性迭代能力，压缩单条内容生产周期</span>
   </li>
 </ul>
@@ -208,16 +208,16 @@ transition: slide-left
 # 集团协同与组织优势
 
 <ul class="page9-core-list">
-  <li data-wm="稳定供给">
-    <span class="item-copy"><strong>稳定供给</strong>：集团算力与液冷基建协同，保证高峰期仍具备稳定生产能力与交付确定性</span>
+  <li data-wm="稳定供给" v-click>
+    <span class="item-copy"><strong>稳定供给</strong>：集团算力与液冷基宄协同，保证高峰期仍具备稳定生产能力与交付确定性</span>
   </li>
-  <li data-wm="成本优势">
+  <li data-wm="成本优势" v-click>
     <span class="item-copy"><strong>成本优势</strong>：上游资源协同降低生成成本，为会员订阅、企业方案和规模化交付留出空间</span>
   </li>
-  <li data-wm="执行闭环">
+  <li data-wm="执行闭环" v-click>
     <span class="item-copy"><strong>执行闭环</strong>：算法、产品、运营一体协同，能把客户需求快速转成可复制的生产流程</span>
   </li>
-  <li data-wm="放量能力">
+  <li data-wm="放量能力" v-click>
     <span class="item-copy"><strong>放量能力</strong>：从创作者场景验证，到团队协作与企业交付扩展，平台具备连续放大的组织基础</span>
   </li>
 </ul>
@@ -229,15 +229,15 @@ transition: slide-left
 # 收入模型
 
 <ul class="target-user-grid">
-  <li>
+  <li v-click>
     <img src="/undraw-revenue-pricing.svg" alt="订阅收入" class="target-user-illustration" />
     <p><strong>订阅收入</strong>四档会员覆盖不同规模用户，形成稳定持续的基础现金流</p>
   </li>
-  <li>
+  <li v-click>
     <img src="/undraw-revenue-subscription.svg" alt="消耗收入" class="target-user-illustration" />
-    <p><strong>消耗收入</strong>积分加油包提升付费弹性，满足高频生成与阶段性爆发需求</p>
+    <p><strong>消耗收入</strong>积分加油包提升付費弹性，满足高频生成与阶段性爆发需求</p>
   </li>
-  <li>
+  <li v-click>
     <img src="/undraw-revenue-enterprise.svg" alt="企业收入" class="target-user-illustration" />
     <p><strong>企业收入</strong>团队版、内容培训与技术支持，提供高客单价增长空间</p>
   </li>
@@ -302,21 +302,21 @@ transition: slide-left
 <section class="timeline-clean" aria-label="2026阶段目标时间轴">
   <div class="timeline-clean__line" aria-hidden="true"></div>
 
-  <article class="timeline-clean__item is-step-1">
+  <article class="timeline-clean__item is-step-1" v-click>
     <div class="timeline-clean__node" aria-hidden="true"></div>
     <p class="timeline-clean__time">第一阶段 · 0-3个月</p>
     <h3>上线与验证</h3>
     <p>5万+ MAU、500+ 作品、20+ 企业客户、月收入100万+、海外市场初步布局</p>
   </article>
 
-  <article class="timeline-clean__item is-step-2">
+  <article class="timeline-clean__item is-step-2" v-click>
     <div class="timeline-clean__node" aria-hidden="true"></div>
     <p class="timeline-clean__time">第二阶段 · 3-6个月</p>
     <h3>商业化放大</h3>
     <p>50万+ MAU、服务收入占比50%+、海外用户占比20%+</p>
   </article>
 
-  <article class="timeline-clean__item is-step-3">
+  <article class="timeline-clean__item is-step-3" v-click>
     <div class="timeline-clean__node" aria-hidden="true"></div>
     <p class="timeline-clean__time">第三阶段 · 6-12个月</p>
     <h3>生态闭环</h3>
@@ -386,16 +386,16 @@ transition: slide-left
 # 竞争壁垒
 
 <ul class="page14-core-list">
-  <li data-wm="全链路闭环">
-    <span class="item-copy"><strong>全链路闭环</strong>：从剧本到成片在同一平台完成，对手工具链越长，我们的效率优势越明显</span>
+  <li data-wm="全链路闭环" v-click>
+    <span class="item-copy"><strong>全链路闭环</strong>：从剧本到成片在同一平台完成，对手工具采越长，我们的效率优势越明显</span>
   </li>
-  <li data-wm="资产复用飞轮">
-    <span class="item-copy"><strong>资产复用飞轮</strong>：角色、场景、分镜持续沉淀，用户粘性与生产效率随使用时间同步增长</span>
+  <li data-wm="资产复用飞轮" v-click>
+    <span class="item-copy"><strong>资产复用飞轮</strong>：角色、场景、分閕持续沉淀，用户粘性与生产效率随使用时间同步增长</span>
   </li>
-  <li data-wm="C端+B端双轮">
-    <span class="item-copy"><strong>C端+B端双轮</strong>：个人创作者验证产品、专业团队放大收入、企业客户贡献稳定 ARR，三层用户结构降低波动风险</span>
+  <li data-wm="C端+B端双轮" v-click>
+    <span class="item-copy"><strong>C端+B端双轮</strong>：个人创作者验证产品、专业团队放大收入、企业客户貢献稳定 ARR，三层用户结构降低波动风险</span>
   </li>
-  <li data-wm="供给壁垒">
+  <li data-wm="供给壁垒" v-click>
     <span class="item-copy"><strong>供给壁垒</strong>：集团算力与液冷基建协同，支撑高峰并发与低边际成本，复制难度高</span>
   </li>
 </ul>
@@ -407,16 +407,16 @@ transition: slide-left
 # 合作价值与执行保障
 
 <ul class="page15-core-list">
-  <li data-wm="内容合作方">
+  <li data-wm="内容合作方" v-click>
     <span class="item-copy"><strong>对内容合作方</strong>：提供稳定的 AI 生产能力接入，缩短交付周期，降低单条内容成本</span>
   </li>
-  <li data-wm="企业客户">
+  <li data-wm="企业客户" v-click>
     <span class="item-copy"><strong>对企业客户</strong>：标准化流程与权限治理，支撑批量生产与可控扩产，实现确定性交付</span>
   </li>
-  <li data-wm="渠道与发行伙伴">
-    <span class="item-copy"><strong>对渠道与发行伙伴</strong>：五条收入模型覆盖订阅、消耗、服务、代发行与技术对接，合作空间清晰</span>
+  <li data-wm="渠道与发行伙伴" v-click>
+    <span class="item-copy"><strong>对渠道与发行伙伴</strong>：五条收入模弋覆盖订阅、消耗、服务、代发行与技术对接，合作空间清晰</span>
   </li>
-  <li data-wm="执行与资源保障">
+  <li data-wm="执行与资源保障" v-click>
     <span class="item-copy"><strong>执行与资源保障</strong>：算力、产品、运营、市场并行推进，集团基建支撑从验证到年度放量的全程节点</span>
   </li>
 </ul>

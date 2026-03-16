@@ -749,19 +749,6 @@
   padding-bottom: 0.35rem;
 }
 
-.slidev-page-11 .slidev-layout h1::after,
-.slidev-page-12 .slidev-layout h1::after,
-.slidev-page-13 .slidev-layout h1::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -0.05rem;
-  width: min(34%, 240px);
-  height: 2px;
-  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--bp-primary) 72%, var(--bp-accent) 28%), transparent);
-}
-
 .slidev-page-13 .competitor-table thead th {
   background: linear-gradient(90deg, rgba(255, 52, 2, 0.18), rgba(255, 240, 107, 0.28));
 }
@@ -1009,6 +996,150 @@
   .slidev-page-12 .slidev-layout .timeline-clean__item::after {
     display: none;
   }
+}
+
+/* CSS Variables for animation easing - smooth and refined per SKILL guidelines */
+:root {
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Page 2 TOC Grid - light speed in from right animation for each button */
+@keyframes lightSpeedInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100%) skewX(-20deg);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-10px) skewX(5deg);
+  }
+
+  80% {
+    transform: translateX(5px) skewX(-2deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) skewX(0);
+  }
+}
+
+.toc-grid--animate {
+  display: grid;
+}
+
+.toc-grid--animate .toc-btn {
+  animation: lightSpeedInRight 0.75s var(--ease-out-quint) both;
+}
+
+.toc-grid--animate .toc-btn:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.toc-grid--animate .toc-btn:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.toc-grid--animate .toc-btn:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.toc-grid--animate .toc-btn:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.toc-grid--animate .toc-btn:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+/* Animation for v-click elements - enhanced visibility with stronger scale */
+[v-click] {
+  transition: all 0.55s var(--ease-out-quart);
+}
+
+[v-click].slidev-vclick-hidden {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+[v-click].slidev-vclick-target {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* List items with stronger slide-in from left */
+li[v-click] {
+  transition: opacity 0.55s var(--ease-out-quart), transform 0.55s var(--ease-out-quart);
+}
+
+li[v-click].slidev-vclick-hidden {
+  opacity: 0;
+  transform: translateX(-24px);
+}
+
+li[v-click].slidev-vclick-target {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Card zoom in animation - dramatic scale for prominent effect */
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+article[v-click] {
+  animation: zoomIn 0.7s var(--ease-out-quint) both;
+}
+
+article[v-click].slidev-vclick-hidden {
+  opacity: 0;
+  transform: scale(0.4);
+}
+
+article[v-click].slidev-vclick-target {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Page 12 timeline items - preserve original transition effects with entrance animation */
+.slidev-page-12 .slidev-layout .timeline-clean__item[v-click] {
+  animation: zoomIn 0.7s var(--ease-out-quint) both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slidev-page-12 .slidev-layout .timeline-clean__item[v-click]:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.08);
+  border-color: rgba(255, 52, 2, 0.15);
+}
+
+/* Smooth button animations with enhanced scale */
+button[v-click] {
+  transition: opacity 0.5s var(--ease-out-quart), transform 0.5s var(--ease-out-quart);
+}
+
+button[v-click].slidev-vclick-hidden {
+  opacity: 0;
+  transform: translateY(16px) scale(0.94);
+}
+
+button[v-click].slidev-vclick-target {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 @media (prefers-reduced-motion: reduce) {
