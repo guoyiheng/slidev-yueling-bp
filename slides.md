@@ -209,7 +209,7 @@ transition: slide-left
 
 <ul class="page9-core-list">
   <li data-wm="稳定供给" v-click>
-    <span class="item-copy"><strong>稳定供给</strong>：集团算力与液冷基宄协同，保证高峰期仍具备稳定生产能力与交付确定性</span>
+    <span class="item-copy"><strong>稳定供给</strong>：集团算力与液冷基建协同，保证高峰期仍具备稳定生产能力与交付确定性</span>
   </li>
   <li data-wm="成本优势" v-click>
     <span class="item-copy"><strong>成本优势</strong>：上游资源协同降低生成成本，为会员订阅、企业方案和规模化交付留出空间</span>
@@ -235,7 +235,7 @@ transition: slide-left
   </li>
   <li v-click>
     <img src="/undraw-revenue-subscription.svg" alt="消耗收入" class="target-user-illustration" />
-    <p><strong>消耗收入</strong>积分加油包提升付費弹性，满足高频生成与阶段性爆发需求</p>
+    <p><strong>消耗收入</strong>积分加油包提升付费弹性，满足高频生成与阶段性爆发需求</p>
   </li>
   <li v-click>
     <img src="/undraw-revenue-enterprise.svg" alt="企业收入" class="target-user-illustration" />
@@ -414,7 +414,7 @@ transition: slide-left
     <span class="item-copy"><strong>对企业客户</strong>：标准化流程与权限治理，支撑批量生产与可控扩产，实现确定性交付</span>
   </li>
   <li data-wm="渠道与发行伙伴" v-click>
-    <span class="item-copy"><strong>对渠道与发行伙伴</strong>：五条收入模弋覆盖订阅、消耗、服务、代发行与技术对接，合作空间清晰</span>
+    <span class="item-copy"><strong>对渠道与发行伙伴</strong>：五条收入模式覆盖订阅、消耗、服务、代发行与技术对接，合作空间清晰</span>
   </li>
   <li data-wm="执行与资源保障" v-click>
     <span class="item-copy"><strong>执行与资源保障</strong>：算力、产品、运营、市场并行推进，集团基建支撑从验证到年度放量的全程节点</span>
