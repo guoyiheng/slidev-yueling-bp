@@ -109,45 +109,70 @@ transition: slide-left
 
 # 痛点聚焦
 
-<section class="page6-spotlight" aria-label="关键痛点图表">
-  <h3>关键痛点信号</h3>
-
-  <div class="page6-spotlight-list">
-    <article class="page6-spotlight-item">
-      <div class="page6-spotlight-head">
-        <span>质量不稳</span>
-        <strong>45%</strong>
-      </div>
-      <div class="page6-bar-track"><span style="width: 90%"></span></div>
-      <p class="page6-spotlight-meta">返工率 45%，平均修改 5.2 次/条，来源：IDC 中国</p>
-    </article>
-    <article class="page6-spotlight-item">
-      <div class="page6-spotlight-head">
-        <span>协作低效</span>
-        <strong>38%</strong>
-      </div>
-      <div class="page6-bar-track"><span style="width: 76%"></span></div>
-      <p class="page6-spotlight-meta">沟通成本占人力 38%，50% 企业因此放弃扩产，来源：艾瑞咨询</p>
-    </article>
-    <article class="page6-spotlight-item">
-      <div class="page6-spotlight-head">
-        <span>工具割裂</span>
+<section class="page6-board" aria-label="痛点聚焦四象限卡片">
+  <article class="page6-card page6-card--donut">
+    <div class="page6-card-head">
+      <h3><ph-link-break-duotone class="page6-card-icon" />工具割裂</h3>
+    </div>
+    <div class="page6-card-chart page6-donut" style="--page6-value: 35;">
+      <div class="page6-donut__inner">
         <strong>35%</strong>
+        <span>信息损耗率</span>
       </div>
-      <div class="page6-bar-track"><span style="width: 70%"></span></div>
-      <p class="page6-spotlight-meta">跨平台协作带来 35% 信息损耗，来源：2025 内容创作者效率报告</p>
-    </article>
-    <article class="page6-spotlight-item">
-      <div class="page6-spotlight-head">
-        <span>交付缓慢</span>
-        <strong>1200元/条</strong>
+    </div>
+    <p class="page6-card-copy">日均跨平台切换 2.3 小时</p>
+    <p class="page6-card-source">来源：2025 内容创作者效率报告</p>
+  </article>
+  <article class="page6-card page6-card--progress">
+    <div class="page6-card-head">
+      <h3><ph-warning-circle-duotone class="page6-card-icon" />质量不稳</h3>
+    </div>
+    <div class="page6-card-chart page6-progress-chart">
+      <div class="page6-progress-meta">
+        <strong>45%</strong>
+        <span>内容返工率</span>
       </div>
-      <div class="page6-bar-track"><span style="width: 84%"></span></div>
-      <p class="page6-spotlight-meta">短视频平均生产成本 1200 元/条，来源：头豹研究院</p>
-    </article>
-  </div>
-
-  <p class="page6-chart-note">注：图中长度用于表达痛点强度与业务压力，金额项按影响程度折算展示。</p>
+      <div class="page6-progress-track">
+        <span style="width: 45%"></span>
+      </div>
+    </div>
+    <p class="page6-card-copy">单条内容平均修改 5.2 次</p>
+    <p class="page6-card-source">来源：IDC 中国</p>
+  </article>
+  <article class="page6-card page6-card--donut">
+    <div class="page6-card-head">
+      <h3><ph-users-three-duotone class="page6-card-icon" />协作低效</h3>
+    </div>
+    <div class="page6-card-chart page6-donut" style="--page6-value: 38;">
+      <div class="page6-donut__inner">
+        <strong>38%</strong>
+        <span>沟通成本占比</span>
+      </div>
+    </div>
+    <p class="page6-card-copy">50% 企业因此放弃扩产</p>
+    <p class="page6-card-source">来源：艾瑞咨询</p>
+  </article>
+  <article class="page6-card page6-card--columns">
+    <div class="page6-card-head">
+      <h3><ph-hourglass-medium-duotone class="page6-card-icon" />交付缓慢</h3>
+    </div>
+    <div class="page6-card-chart page6-columns-chart">
+      <div class="page6-columns-bars">
+        <div class="page6-column page6-column--muted" style="--page6-height: 78%;">
+          <span class="page6-column__value">30%</span>
+          <span class="page6-column__bar"></span>
+          <span class="page6-column__label">行业平均降速</span>
+        </div>
+        <div class="page6-column page6-column--primary" style="--page6-height: 32%;">
+          <span class="page6-column__value">12%</span>
+          <span class="page6-column__bar"></span>
+          <span class="page6-column__label">内容赛道</span>
+        </div>
+      </div>
+    </div>
+    <p class="page6-card-copy">单条短视频平均生产成本 1200 元</p>
+    <p class="page6-card-source">来源：头豹研究院</p>
+  </article>
 </section>
 
 ---
