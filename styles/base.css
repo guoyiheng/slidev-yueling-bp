@@ -541,6 +541,9 @@
   font-size: clamp(1.15rem, 2.5vw, 1.7rem);
   line-height: 1.35;
   color: color-mix(in srgb, var(--bp-muted) 80%, var(--bp-primary) 20%);
+  background-image: linear-gradient(180deg,
+      color-mix(in srgb, var(--bp-muted) 66%, var(--bp-primary) 34%) 0%,
+      color-mix(in srgb, var(--bp-muted) 88%, var(--bp-primary) 12%) 100%);
   font-family: 'Noto Serif SC', 'Songti SC', serif;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -549,6 +552,14 @@
   max-width: min(88%, 680px);
   text-wrap: balance;
   opacity: 0.94;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .slidev-page-16 .slidev-layout h2 {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .slidev-page-16 .slidev-layout h2,
