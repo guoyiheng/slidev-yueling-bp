@@ -156,17 +156,11 @@ transition: slide-left
     <div class="page6-card-head">
       <h3><ph-hourglass-medium-duotone class="page6-card-icon" />交付缓慢</h3>
     </div>
-    <div class="page6-card-chart page6-columns-chart">
-      <div class="page6-columns-bars">
-        <div class="page6-column page6-column--muted" style="--page6-height: 78%;">
-          <span class="page6-column__value">30%</span>
-          <span class="page6-column__bar"></span>
-          <span class="page6-column__label">行业平均降速</span>
-        </div>
-        <div class="page6-column page6-column--primary" style="--page6-height: 32%;">
-          <span class="page6-column__value">12%</span>
-          <span class="page6-column__bar"></span>
-          <span class="page6-column__label">内容赛道</span>
+    <div class="page6-card-chart page6-values-split">
+      <div class="page6-values-container">
+        <div class="page6-value-block">
+          <span class="page6-value-item">30%</span>
+          <span class="page6-value-label">行业平均降速</span>
         </div>
       </div>
     </div>
