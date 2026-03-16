@@ -393,7 +393,7 @@ transition: slide-left
     <span class="item-copy"><strong>资产复用飞轮</strong>：角色、场景、物品持续沉淀，用户粘性与生产效率随使用时间同步增长</span>
   </li>
   <li data-wm="C端+B端双轮" v-click>
-    <span class="item-copy"><strong>C端+B端双轮</strong>：个人创作者验证产品、专业团队放大收入、企业客户貢献稳定 ARR，三层用户结构降低波动风险</span>
+    <span class="item-copy"><strong>C端+B端双轮</strong>：个人创作者验证产品、专业团队放大收入、企业客户贡献稳定，三层用户结构降低波动风险</span>
   </li>
   <li data-wm="供给壁垒" v-click>
     <span class="item-copy"><strong>供给壁垒</strong>：集团算力与液冷基建协同，支撑高峰并发与低边际成本，复制难度高</span>
