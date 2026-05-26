@@ -1,14 +1,13 @@
 ---
 theme: default
 layout: full
-title: 跃灵
+title: 跃灵AI 销售推广手册
 class: text-left
 company: 跃灵
-date: 2026-03-12
+date: 2026-05-26
 transition: slide-left
 
 ---
-<!-- TBD 需要截图 -->
 <div class="h-full w-full flex flex-col justify-between">
   <div class="flex items-center gap-2 pt-1">
     <img src="/yueling-logo.svg" alt="跃灵Logo" class="h-7 w-7" />
@@ -16,10 +15,10 @@ transition: slide-left
   </div>
 
   <div class="flex-1 flex flex-col justify-center">
-    <h1 class="mb-4">跃灵</h1>
+    <h1 class="mb-4">跃灵AI</h1>
     <div class="opacity-70">
-      <p class="text-base mb--2!">面向创作者的全链路 AI 内容生产平台</p>
-      <p class="text-base">Creator-Focused End-to-End AI Content Production Platform</p>
+      <p class="text-base mb--2!">销售推广手册 · 一站式 AI 内容创作平台</p>
+      <p class="text-base">Sales Playbook</p>
     </div>
   </div>
 
@@ -33,307 +32,223 @@ transition: slide-left
 # 目录
 
 <div class="toc-grid toc-grid--animate">
-  <button class="toc-btn" @click="$nav.go(3)">01 平台简介</button>
-  <button class="toc-btn" @click="$nav.go(5)">02 市场机会</button>
-  <button class="toc-btn" @click="$nav.go(7)">03 产品介绍</button>
-  <button class="toc-btn" @click="$nav.go(10)">04 发展规划</button>
-  <button class="toc-btn" @click="$nav.go(13)">05 为什么是跃灵AI</button>
+  <button class="toc-btn" @click="$nav.go(3)">01 产品价值</button>
+  <button class="toc-btn" @click="$nav.go(4)">02 适用人群</button>
+  <button class="toc-btn" @click="$nav.go(5)">03 产品能力</button>
+  <button class="toc-btn" @click="$nav.go(9)">04 定价方案</button>
 </div>
 
 ---
 
-##### 01 平台简介 | Platform Overview
+##### 01 产品价值 | Value
 
-# 平台定位
+# 30 秒说清楚跃灵AI
 
 <ul class="page3-core-list">
-  <li data-wm="全链路 AI 内容生产平台" v-click>
-    <span class="item-copy">跃灵AI 是面向创作者与内容团队的<strong>全链路 AI 内容生产平台</strong></span>
+  <li data-wm="一句话定位" v-click>
+    <span class="item-copy"><strong>一句话</strong>：跃灵AI 是一站式 AI 内容创作平台，从生图、生视频到配音、数字人，一个平台全搞定</span>
   </li>
-  <li data-wm="剧本驱动 + 流水线编排" v-click>
-    <span class="item-copy">以<strong>"剧本驱动 + 流水线编排"</strong>连接创意、生产、交付全流程</span>
+  <li data-wm="核心差异" v-click>
+    <span class="item-copy"><strong>核心差异</strong>：不是单点工具，是"剧本→分镜→角色→视频→配音→交付"全链路闭环，不用来回切平台</span>l
   </li>
-  <li data-wm="可管理 可协同 可复用" v-click>
-    <span class="item-copy">平台核心：<strong>可管理、可协同、可复用</strong></span>
+  <li data-wm="效率结果" v-click>
+    <span class="item-copy"><strong>效率结果</strong>：单人单条短视频从数天压到几小时，团队批量出片角色不崩坏，资产越用越稳</span>
   </li>
-  <li data-wm="生产效率" v-click>
-    <span class="item-copy">使命：以 AI 流水线重构内容<strong>生产效率</strong>，支撑稳定规模化增长</span>
+  <li data-wm="价格锚点" v-click>
+    <span class="item-copy"><strong>价格</strong>：专业版 79 元/月含商用授权，企业版 399 元/月不限并发——比招一个实习生便宜得多</span>
   </li>
 </ul>
 
 ---
 
-##### 01 平台简介 | Platform Overview
+##### 02 适用人群 | Who Is It For
 
-# 目标用户
+# 谁在用跃灵AI
 
 <ul class="target-user-grid">
   <li v-click>
     <img src="/undraw-target-creator.svg" alt="个人创作者" class="target-user-illustration" />
-    <p><strong>个人创作者</strong>更低门槛、更快出片，把创意快速转为可发布内容</p>
+    <p><strong>个人创作者</strong><br/>自媒体博主、漫剧作者、短视频达人<br/><small>痛点：单人产能天花板低，多平台切换耗时</small><br/><small>推：基础版→专业版，强调商用授权</small></p>
   </li>
   <li v-click>
-    <img src="/undraw-target-team.svg" alt="专业团队" class="target-user-illustration" />
-    <p><strong>专业团队</strong>多人并行协作，提升角色一致性与批量生产效率</p>
+    <img src="/undraw-target-team.svg" alt="内容工作室" class="target-user-illustration" />
+    <p><strong>内容工作室</strong><br/>MCN、动漫团队、短剧制作组<br/><small>痛点：多人协作混乱、角色一致性差、交付延期</small><br/><small>推：企业版，强调子账号+无限并发</small></p>
   </li>
   <li v-click>
     <img src="/undraw-target-enterprise.svg" alt="企业客户" class="target-user-illustration" />
-    <p><strong>企业客户</strong>标准化流程与权限治理，实现可控成本与稳定交付</p>
+    <p><strong>企业客户</strong><br/>品牌方、电商团队、教培机构<br/><small>痛点：批量内容需求大、版权合规风险、供应商不稳定</small><br/><small>推：企业版+加油包，强调商用授权+稳定交付</small></p>
   </li>
 </ul>
 
 ---
 
-##### 02 市场机会 | Market Opportunity
+##### 03 产品能力 | Product Capabilities
 
-# 机会判断
-
-<ul class="page5-core-list">
-  <li data-wm="市场规模" v-click>
-    <span class="item-copy"><strong>市场规模</strong>：2025 中国 AIGC 市场规模 4800 亿，内容生产类占 41.3%（艾瑞咨询）</span>
-  </li>
-  <li data-wm="需求爆发" v-click>
-    <span class="item-copy"><strong>需求爆发</strong>：泛娱乐短视频日播放 1.2 万亿次，漫剧创作量同比 +180%（头豹研究院）</span>
-  </li>
-  <li data-wm="改造提速" v-click>
-    <span class="item-copy"><strong>改造提速</strong>：78% 内容团队启动工业化改造，仅 32% 完成全链路数字化（易观分析）</span>
-  </li>
-  <li data-wm="窗口已开" v-click>
-    <span class="item-copy"><strong>窗口已开</strong>：平台型 AI 基础设施将承接下一轮产能与商业化增量</span>
-  </li>
-</ul>
-
----
-
-##### 02 市场机会 | Market Opportunity
-
-# 痛点聚焦
-
-<section class="page6-board" aria-label="痛点聚焦四象限卡片">
-  <article class="page6-card page6-card--donut" v-click>
-    <div class="page6-card-head">
-      <h3><ph-link-break-duotone class="page6-card-icon" />工具割裂</h3>
-    </div>
-    <div class="page6-card-chart page6-donut" style="--page6-value: 35;">
-      <div class="page6-donut__inner">
-        <strong>35%</strong>
-        <span>信息损耗率</span>
-      </div>
-    </div>
-    <p class="page6-card-copy">日均跨平台切换 2.3 小时</p>
-    <p class="page6-card-source">来源：2025 内容创作者效率报告</p>
-  </article>
-  <article class="page6-card page6-card--progress" v-click>
-    <div class="page6-card-head">
-      <h3><ph-warning-circle-duotone class="page6-card-icon" />质量不稳</h3>
-    </div>
-    <div class="page6-card-chart page6-progress-chart">
-      <div class="page6-progress-meta">
-        <strong>45%</strong>
-        <span>内容返工率</span>
-      </div>
-      <div class="page6-progress-track">
-        <span style="width: 45%"></span>
-      </div>
-    </div>
-    <p class="page6-card-copy">单条内容平均修改 5.2 次</p>
-    <p class="page6-card-source">来源：IDC 中国</p>
-  </article>
-  <article class="page6-card page6-card--donut" v-click>
-    <div class="page6-card-head">
-      <h3><ph-users-three-duotone class="page6-card-icon" />协作低效</h3>
-    </div>
-    <div class="page6-card-chart page6-donut" style="--page6-value: 38;">
-      <div class="page6-donut__inner">
-        <strong>38%</strong>
-        <span>沟通成本占比</span>
-      </div>
-    </div>
-    <p class="page6-card-copy">50% 企业因此放弃扩产</p>
-    <p class="page6-card-source">来源：艾瑞咨询</p>
-  </article>
-  <article class="page6-card page6-card--columns" v-click>
-    <div class="page6-card-head">
-      <h3><ph-hourglass-medium-duotone class="page6-card-icon" />交付缓慢</h3>
-    </div>
-    <div class="page6-card-chart page6-values-split">
-      <div class="page6-values-container">
-        <div class="page6-value-block">
-          <span class="page6-value-item">30%</span>
-          <span class="page6-value-label">行业平均降速</span>
-        </div>
-      </div>
-    </div>
-    <p class="page6-card-copy">单条短视频平均生产成本 1200 元</p>
-    <p class="page6-card-source">来源：头豹研究院</p>
-  </article>
-</section>
-
----
-
-##### 03 产品介绍 | Product Introduction
-
-# 从痛点到产品解法
+# 全链路能力一览
 
 <ul class="page7-core-list">
-  <li data-wm="工具割裂" v-click>
-    <span class="item-copy">针对<strong>工具割裂</strong>：以剧本为主线串联创意、分镜、角色、视频、配音与交付，减少跨平台切换与信息断层</span>
+  <li data-wm="AI 图片" v-click>
+    <span class="item-copy"><strong>AI 图片</strong>：角色 / 场景 / 物品 / 融合 / 修改五大模式，内建 GPT Image 2.0、Wan2.7 Pro、Nano Banana Pro，最高 4K 输出</span>
   </li>
-  <li data-wm="质量不稳" v-click>
-    <span class="item-copy">针对<strong>质量不稳</strong>：提供角色、场景、道具和镜头一致性控制，降低返工率与反复修改成本</span>
+  <li data-wm="AI 视频" v-click>
+    <span class="item-copy"><strong>AI 视频</strong>：参考生视频 + 首尾帧视频，Seedance 2.0、Veo 3.1、Grok Video 3 等 6 款模型，支持 480p～4K</span>
   </li>
-  <li data-wm="协作低效" v-click>
-    <span class="item-copy">针对<strong>协作低效</strong>：把任务节点、素材资产、版本状态与权限管理纳入同一流水线，支撑多人并行协作</span>
+  <li data-wm="配音与数字人" v-click>
+    <span class="item-copy"><strong>配音与数字人</strong>：跃灵 TTS 文字转语音、声音克隆、数字人对口型，旁白与口播一气呵成</span>
   </li>
-  <li data-wm="交付缓慢" v-click>
-    <span class="item-copy">针对<strong>交付缓慢</strong>：通过模板化拆解、批量生成与非线性迭代能力，压缩单条内容生产周期</span>
+  <li data-wm="创作工具箱" v-click>
+    <span class="item-copy"><strong>创作工具箱</strong>：角色替换、多角度图片、画质增强、抽帧、提示词工坊，解决崩坏/模糊/不会写提示词</span>
   </li>
-</ul>
-
----
-
-##### 03 产品介绍 | Product Introduction
-
-# 我们最有优势的地方 (待补充截图)
-
-- **全链路系统**：从剧本到成片的核心环节在同一平台闭环完成，效率提升更可持续
-- **持续复用**：角色、场景、分镜与素材资产可沉淀复用，越做越快，越做越稳
-- **兼顾团队与企业**：既支持创作者灵活创作，也支持企业标准化流程和权限治理
-- **可迭代流水线**：允许中途修改、局部重做和快速回收，不因单点变更拖慢整体交付
-
----
-
-##### 03 产品介绍 | Product Introduction
-
-# 集团协同与组织优势
-
-<ul class="page9-core-list">
-  <li data-wm="稳定供给" v-click>
-    <span class="item-copy"><strong>稳定供给</strong>：集团算力与液冷基建协同，保证高峰期仍具备稳定生产能力与交付确定性</span>
-  </li>
-  <li data-wm="成本优势" v-click>
-    <span class="item-copy"><strong>成本优势</strong>：上游资源协同降低生成成本，为会员订阅、企业方案和规模化交付留出空间</span>
-  </li>
-  <li data-wm="执行闭环" v-click>
-    <span class="item-copy"><strong>执行闭环</strong>：算法、产品、运营一体协同，能把客户需求快速转成可复制的生产流程</span>
-  </li>
-  <li data-wm="放量能力" v-click>
-    <span class="item-copy"><strong>放量能力</strong>：从创作者场景验证，到团队协作与企业交付扩展，平台具备连续放大的组织基础</span>
+  <li data-wm="生成速度" v-click>
+    <span class="item-copy"><strong>生成速度</strong>：视频平均 1～2 分钟出片，比即梦官方更快，几乎无排队，高峰时段也能稳定出活</span>
   </li>
 </ul>
 
 ---
 
-##### 04 发展规划 | Development Roadmap
+##### 03 产品能力 | Product Capabilities
 
-# 收入模型
-
-<ul class="target-user-grid">
-  <li v-click>
-    <img src="/undraw-revenue-pricing.svg" alt="订阅收入" class="target-user-illustration" />
-    <p><strong>订阅收入</strong>四档会员覆盖不同规模用户，形成稳定持续的基础现金流</p>
-  </li>
-  <li v-click>
-    <img src="/undraw-revenue-subscription.svg" alt="消耗收入" class="target-user-illustration" />
-    <p><strong>消耗收入</strong>积分加油包提升付费弹性，满足高频生成与阶段性爆发需求</p>
-  </li>
-  <li v-click>
-    <img src="/undraw-revenue-enterprise.svg" alt="企业收入" class="target-user-illustration" />
-    <p><strong>企业收入</strong>团队版、内容培训与技术支持，提供高客单价增长空间</p>
-  </li>
-</ul>
-
----
-
-##### 04 发展规划 | Development Roadmap
-
-# 定价与订阅体系
+# 模型速查卡
 
 <table class="biz-table">
   <thead>
     <tr>
-      <th>版本</th>
-      <th>月费</th>
-      <th>年费</th>
-      <th>月积分</th>
-      <th>关键权益</th>
+      <th>类型</th>
+      <th>模型名称</th>
+      <th>出品方</th>
+      <th>特点</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>免费版</td>
-      <td>0元</td>
-      <td>0元</td>
-      <td>注册赠送50积分</td>
-      <td>基础体验，最多2个并发</td>
+      <td rowspan="3">图片</td>
+      <td>GPT Image 2.0</td>
+      <td>OpenAI</td>
+      <td>综合能力强，最高 4K</td>
     </tr>
     <tr>
-      <td>基础版</td>
-      <td>29元</td>
-      <td>278元</td>
-      <td>300积分</td>
-      <td>最多5个并发，积分9折</td>
+      <td>Wan2.7 Image Pro</td>
+      <td>阿里</td>
+      <td>国风/动漫风格出色，最高 4K</td>
     </tr>
     <tr>
-      <td>专业版</td>
-      <td>99元</td>
-      <td>950元</td>
-      <td>1000积分</td>
-      <td>全模型、4K、专属客服</td>
+      <td>Nano Banana Pro</td>
+      <td>Google</td>
+      <td>支持多角度生成，最高 4K</td>
     </tr>
     <tr>
-      <td>企业版</td>
-      <td>499元</td>
-      <td>4790元</td>
-      <td>6000积分</td>
-      <td>不限并发、团队协作、技术对接</td>
+      <td rowspan="4">视频</td>
+      <td>Seedance 2.0</td>
+      <td>字节跳动</td>
+      <td>主力模型，约 2 分钟出片，支持 720p</td>
+    </tr>
+    <tr>
+      <td>Seedance 2.0 Fast</td>
+      <td>字节跳动</td>
+      <td>极速版，约 2 分钟出片</td>
+    </tr>
+    <tr>
+      <td>Veo 3.1</td>
+      <td>Google</td>
+      <td>画质细腻，支持 4K 版本</td>
+    </tr>
+    <tr>
+      <td>Grok Video 3</td>
+      <td>xAI</td>
+      <td>支持 1080p，约 1 分钟出片</td>
+    </tr>
+    <tr>
+      <td>配音</td>
+      <td>跃灵 TTS</td>
+      <td>跃灵</td>
+      <td>自研配音引擎，约 2 分钟生成</td>
+    </tr>
+    <tr>
+      <td>数字人</td>
+      <td>跃灵数字人</td>
+      <td>跃灵</td>
+      <td>自研对口型引擎，约 10 分钟生成</td>
     </tr>
   </tbody>
 </table>
 
-加油包档位：50元、200元、1000元、5000元，按会员等级享受不同折扣
+---
+
+##### 03 产品能力 | Product Capabilities
+
+# 创作工具箱详解
+
+<table class="biz-table">
+  <thead>
+    <tr>
+      <th>工具</th>
+      <th>一句话</th>
+      <th>解决什么问题</th>
+      <th>典型场景</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>提示词工坊</td>
+      <td>不会写提示词？套模板</td>
+      <td>新手门槛高</td>
+      <td>客户上手第一步，降低劝退率</td>
+    </tr>
+    <tr>
+      <td>剧本大师</td>
+      <td>剧本→分镜→角色一键拆</td>
+      <td>长内容拆解耗时</td>
+      <td>漫剧、短剧批量生产</td>
+    </tr>
+    <tr>
+      <td>角色替换</td>
+      <td>视频里角色崩了？换</td>
+      <td>AI 生视频角色不稳定</td>
+      <td>关键镜头修复，不过度返工</td>
+    </tr>
+    <tr>
+      <td>多角度图片</td>
+      <td>一张图出多视角</td>
+      <td>角色素材单一</td>
+      <td>3D 参考、漫画分镜、IP 开发</td>
+    </tr>
+    <tr>
+      <td>对口型/数字人</td>
+      <td>让人物开口说话</td>
+      <td>静态角色无法互动</td>
+      <td>口播、虚拟主播、知识科普</td>
+    </tr>
+    <tr>
+      <td>声音克隆</td>
+      <td>复制一个自己的声音</td>
+      <td>IP 角色需要固定音色</td>
+      <td>连载配音、品牌定制旁白</td>
+    </tr>
+    <tr>
+      <td>画质增强</td>
+      <td>模糊变清晰</td>
+      <td>生成结果分辨率不够</td>
+      <td>成片交付前最后一步</td>
+    </tr>
+    <tr>
+      <td>素材库</td>
+      <td>全部资产自动入库</td>
+      <td>素材散落难复用</td>
+      <td>项目管理、批量调度、团队共享</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
-##### 04 发展规划 | Development Roadmap
+##### 03 产品能力 | Product Capabilities
 
-# 2026阶段目标
-
-<section class="timeline-clean" aria-label="2026阶段目标时间轴">
-  <div class="timeline-clean__line" aria-hidden="true"></div>
-
-  <article class="timeline-clean__item is-step-1" v-click>
-    <div class="timeline-clean__node" aria-hidden="true"></div>
-    <p class="timeline-clean__time">第一阶段 · 0-3个月</p>
-    <h3>上线与验证</h3>
-    <p>5万+ MAU、500+ 作品、20+ 企业客户、月收入100万+、海外市场初步布局</p>
-  </article>
-
-  <article class="timeline-clean__item is-step-2" v-click>
-    <div class="timeline-clean__node" aria-hidden="true"></div>
-    <p class="timeline-clean__time">第二阶段 · 3-6个月</p>
-    <h3>商业化放大</h3>
-    <p>50万+ MAU、服务收入占比50%+、海外用户占比20%+</p>
-  </article>
-
-  <article class="timeline-clean__item is-step-3" v-click>
-    <div class="timeline-clean__node" aria-hidden="true"></div>
-    <p class="timeline-clean__time">第三阶段 · 6-12个月</p>
-    <h3>生态闭环</h3>
-    <p>100万+ MAU、年收入目标5000万、海外收入占比40%+、行业领先地位</p>
-  </article>
-</section>
-
----
-
-##### 05 为什么是跃灵AI | Why Yueling AI
-
-# 竞品格局与差异化
+# 竞品差异速记
 
 <table class="competitor-table">
   <thead>
     <tr>
-      <th>维度</th>
+      <th>对比维度</th>
       <th>跃灵AI</th>
       <th>即梦</th>
       <th>可灵</th>
@@ -343,88 +258,186 @@ transition: slide-left
   <tbody>
     <tr>
       <td>产品定位</td>
-      <td>全链路平台<br><small>剧本驱动，覆盖创意到交付</small></td>
-      <td>流量平台<br><small>C端大众创作，依托抖音/剪映分发</small></td>
-      <td>技术工具<br><small>高质量视频生成，模型能力导向</small></td>
-      <td>B端工具<br><small>面向漫剧动画专业制作流程</small></td>
-    </tr>
-    <tr>
-      <td>内容质量</td>
-      <td>稳定导向<br><small>剧本级角色管理，全流程一致性</small></td>
-      <td>爆款导向<br><small>模板丰富，参考图可控，跨镜头一致性一般</small></td>
-      <td>写实导向<br><small>运动流畅，参考图+首尾帧，一致性较好</small></td>
-      <td>专业导向<br><small>动漫质量稳定，角色连续优化能力强</small></td>
+      <td><strong>全链路平台</strong><br/><small>剧本→交付一站式</small></td>
+      <td>流量工具<br/><small>依托抖音/剪映</small></td>
+      <td>技术工具<br/><small>视频生成能力强</small></td>
+      <td>B端工具<br/><small>漫剧动画专业向</small></td>
     </tr>
     <tr>
       <td>团队协作</td>
-      <td>原生协作<br><small>权限+流程内建，支持多人并行</small></td>
-      <td>个人创作<br><small>以单人使用为主，协作能力弱</small></td>
-      <td>轻协作<br><small>无产品级协作，偏API接入</small></td>
-      <td>工作室协作<br><small>支持团队流程，但链路较重</small></td>
+      <td>✅ 原生子账号+积分调度</td>
+      <td>❌ 个人创作为主</td>
+      <td>⚠️ 无产品级协作</td>
+      <td>⚠️ 支持但链路重</td>
     </tr>
     <tr>
-      <td>商业模式</td>
-      <td>五轨并行<br><small>订阅/积分/服务/发行/企业</small></td>
-      <td>免费增值<br><small>会员订阅为主，约38元/月起</small></td>
-      <td>订阅+API<br><small>技术商业化，约66元/月起</small></td>
-      <td>高客单价<br><small>订阅结合定制开发服务</small></td>
+      <td>商用授权</td>
+      <td>✅ 专业版即享</td>
+      <td>⚠️ 需确认条款</td>
+      <td>⚠️ 需确认条款</td>
+      <td>⚠️ 高客单价含</td>
     </tr>
     <tr>
-      <td>目标用户</td>
-      <td>全层用户<br><small>个人创作者+团队+企业客户</small></td>
-      <td>大众创作者<br><small>短视频用户、网红、博主</small></td>
-      <td>专业创作者<br><small>影视从业者与海外创作人群</small></td>
-      <td>专业机构<br><small>漫剧团队、动漫公司、制作机构</small></td>
+      <td>资产复用</td>
+      <td>✅ 素材库自动沉淀</td>
+      <td>⚠️ 模板为主</td>
+      <td>⚠️ 偏单次生成</td>
+      <td>✅ 制作流程内可复用</td>
     </tr>
   </tbody>
 </table>
 
+
 ---
 
-##### 05 为什么是跃灵AI | Why Yueling AI
+##### 04 定价方案 | Pricing
 
-# 竞争壁垒
+# 四档会员 + 加油包
+
+<table class="biz-table">
+  <thead>
+    <tr>
+      <th>档位</th>
+      <th>月费</th>
+      <th>月积分</th>
+      <th>并发</th>
+      <th>商用授权</th>
+      <th>适合谁</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>免费版</td>
+      <td>0 元</td>
+      <td>注册送 50</td>
+      <td>2 个</td>
+      <td>❌</td>
+      <td>先体验再决定</td>
+    </tr>
+    <tr>
+      <td>基础版</td>
+      <td>23 元</td>
+      <td>300</td>
+      <td>5 个</td>
+      <td>❌</td>
+      <td>偶尔玩、量不大</td>
+    </tr>
+    <tr>
+      <td>专业版</td>
+      <td><strong>79 元</strong></td>
+      <td>1000</td>
+      <td>20 个</td>
+      <td>✅</td>
+      <td><strong>主力推荐</strong>：日常创作+商用</td>
+    </tr>
+    <tr>
+      <td>企业版</td>
+      <td><strong>399 元</strong></td>
+      <td>6000</td>
+      <td>无限</td>
+      <td>✅</td>
+      <td><strong>团队推荐</strong>：协作+批量交付</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="mt-4 text-sm opacity-80">
+  <p><strong>加油包</strong>：50 / 200 / 1000 / 5000 元，按会员等级折扣，<strong>购买后永不过期</strong></p>
+  <p><strong>积分说明</strong>：月度积分每月刷新（不结转），加油包积分永不过期——建议客户先用月度积分，不够再补加油包</p>
+
+</div>
+
+---
+
+##### 04 定价方案 | Pricing
+
+# 企业版深度解析
+
+<ul class="page9-core-list">
+  <li data-wm="零门槛开通" v-click>
+    <span class="item-copy"><strong>零门槛开通</strong>：无需企业营业执照、无需认证流程，购买即生效，头像上方自动显示企业标识</span>
+  </li>
+  <li data-wm="子账号体系" v-click>
+    <span class="item-copy"><strong>子账号体系</strong>：主账号创建子账号，积分统一分配、按需回收，成员专注创作不碰结算</span>
+  </li>
+  <li data-wm="无限并发" v-click>
+    <span class="item-copy"><strong>无限并发</strong>：全团队同时出片不排队，高峰期不掉链子，6000 月积分覆盖中等团队需求</span>
+  </li>
+  <li data-wm="商用+技术" v-click>
+    <span class="item-copy"><strong>商用授权 + 技术对接</strong>：所有产出直接商用，支持技术对接与定制化需求，走绿色通道</span>
+  </li>
+</ul>
+
+<div class="mt-4 text-sm opacity-85">
+  <p><strong>开通路径</strong>：左下角「积分」→「企业版」立即订阅 → 微信/支付宝；或联系客服对公打款</p>
+</div>
+
+---
+
+##### 04 定价方案 | Pricing
+
+# 如何选择适合你的版本
 
 <ul class="page14-core-list">
-  <li data-wm="全链路闭环" v-click>
-    <span class="item-copy"><strong>全链路闭环</strong>：从剧本到成片在同一平台完成，对手工具采越长，我们的效率优势越明显</span>
+  <li data-wm="免费体验" v-click>
+    <span class="item-copy"><strong>先免费体验</strong>：注册即送 50 积分，零成本上手，满意再升级</span>
   </li>
-  <li data-wm="资产复用飞轮" v-click>
-    <span class="item-copy"><strong>资产复用飞轮</strong>：角色、场景、物品持续沉淀，用户粘性与生产效率随使用时间同步增长</span>
+  <li data-wm="个人创作者" v-click>
+    <span class="item-copy"><strong>个人创作者</strong>：<strong>专业版 79 元/月</strong>最合适——1000 积分、20 并发、含商用授权，日常创作够用</span>
   </li>
-  <li data-wm="C端+B端双轮" v-click>
-    <span class="item-copy"><strong>C端+B端双轮</strong>：个人创作者验证产品、专业团队放大收入、企业客户贡献稳定，三层用户结构降低波动风险</span>
+  <li data-wm="小团队" v-click>
+    <span class="item-copy"><strong>5 人以上团队</strong>：直接上<strong>企业版 399 元/月</strong>——无限并发、子账号管理、商用授权一步到位，比各自买专业版更划算</span>
   </li>
-  <li data-wm="供给壁垒" v-click>
-    <span class="item-copy"><strong>供给壁垒</strong>：集团算力与液冷基建协同，支撑高峰并发与低边际成本，复制难度高</span>
+  <li data-wm="积分补充" v-click>
+    <span class="item-copy"><strong>月度积分不够用？</strong>升级会员档位获得更多积分，或购买加油包随时补充——加油包永不过期，随时可用</span>
   </li>
 </ul>
 
 ---
 
-##### 05 为什么是跃灵AI | Why Yueling AI
+# 快速上手
 
-# 合作价值与执行保障
+<section class="timeline-clean" aria-label="快速上手" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
+  <div class="timeline-clean__line" aria-hidden="true"></div>
 
-<ul class="page15-core-list">
-  <li data-wm="内容合作方" v-click>
-    <span class="item-copy"><strong>对内容合作方</strong>：提供稳定的 AI 生产能力接入，缩短交付周期，降低单条内容成本</span>
-  </li>
-  <li data-wm="企业客户" v-click>
-    <span class="item-copy"><strong>对企业客户</strong>：标准化流程与权限治理，支撑批量生产与可控扩产，实现确定性交付</span>
-  </li>
-  <li data-wm="渠道与发行伙伴" v-click>
-    <span class="item-copy"><strong>对渠道与发行伙伴</strong>：五条收入模式覆盖订阅、消耗、服务、代发行与技术对接，合作空间清晰</span>
-  </li>
-  <li data-wm="执行与资源保障" v-click>
-    <span class="item-copy"><strong>执行与资源保障</strong>：算力、产品、运营、市场并行推进，集团基建支撑从验证到年度放量的全程节点</span>
-  </li>
-</ul>
+  <article class="timeline-clean__item" v-click>
+    <div class="timeline-clean__node" aria-hidden="true"></div>
+    <p class="timeline-clean__time">Step 1</p>
+    <h3>注册登录</h3>
+    <p>手机号一键注册，浏览器即用，无需下载安装，注册送 50 积分免费体验</p>
+  </article>
+
+  <article class="timeline-clean__item" v-click>
+    <div class="timeline-clean__node" aria-hidden="true"></div>
+    <p class="timeline-clean__time">Step 2</p>
+    <h3>选择会员</h3>
+    <p>按需选基础版 / 专业版 / 企业版，解锁更多模型、更高画质和商用授权</p>
+  </article>
+
+  <article class="timeline-clean__item" v-click>
+    <div class="timeline-clean__node" aria-hidden="true"></div>
+    <p class="timeline-clean__time">Step 3</p>
+    <h3>AI 生图</h3>
+    <p>角色 / 场景 / 物品 / 分镜图，提示词工坊提供海量模板，几秒出图自动入库</p>
+  </article>
+
+  <article class="timeline-clean__item" v-click>
+    <div class="timeline-clean__node" aria-hidden="true"></div>
+    <p class="timeline-clean__time">Step 4</p>
+    <h3>AI 生视频</h3>
+    <p>上传图片让 AI 把它动起来，或设首尾帧过渡动画，Seedance 2.0 约 2 分钟出片</p>
+  </article>
+</section>
 
 ---
 class: text-center
 ---
 
-# Thank You
+# 立即体验
 
-## 2026年3月
+<div class="mt-4 text-sm opacity-85">
+  <p><strong>官网</strong>：<a href="https://yueling.xingluan.cn/" target="_blank">https://yueling.xingluan.cn/</a></p>
+  <p>手机号一键注册，赠送 50 积分，零成本上手</p>
+  <p><strong>新手指南</strong>：<a href="https://icnb1aakmvl1.feishu.cn/wiki/DUjxwQJERiUFzmk0L5CcunWLn2d" target="_blank">详细图文教程 →</a></p>
+  <p>产品内「联系客服」，专业版及以上享专属客服</p>
+</div>

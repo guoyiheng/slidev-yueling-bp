@@ -1152,3 +1152,36 @@ button[v-click].slidev-vclick-target {
     scroll-behavior: auto !important;
   }
 }
+
+/* Unified dev/export behavior for requested pages. */
+/* .slidev-page-2 .toc-grid--animate .toc-btn {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.slidev-page-4 .slidev-layout ul.target-user-grid li,
+.slidev-page-6 .slidev-layout .page6-card,
+.slidev-page-10 .slidev-layout ul.target-user-grid li,
+.slidev-page-11 .biz-table,
+.slidev-page-13 .competitor-table {
+  box-shadow: none !important;
+}
+
+.slidev-page-16 .slidev-layout h2 {
+  animation: none !important;
+  background: none !important;
+  -webkit-text-fill-color: currentColor;
+  color: color-mix(in srgb, var(--bp-muted) 72%, var(--bp-primary) 28%);
+  display: flex;
+  width: fit-content;
+  margin-inline: auto;
+  gap: 0.6rem;
+}
+
+.slidev-page-16 .slidev-layout h2::before,
+.slidev-page-16 .slidev-layout h2::after {
+  width: 72px;
+  background: color-mix(in srgb, var(--bp-primary) 48%, var(--bp-muted) 52%);
+  opacity: 0.65;
+} */
