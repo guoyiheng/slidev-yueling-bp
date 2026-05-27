@@ -1,7 +1,7 @@
 ---
 theme: default
 layout: full
-title: 跃灵AI 销售推广手册
+title: 跃灵AI
 class: text-left
 company: 跃灵
 date: 2026-05-26
@@ -17,8 +17,7 @@ transition: slide-left
   <div class="flex-1 flex flex-col justify-center">
     <h1 class="mb-4">跃灵AI</h1>
     <div class="opacity-70">
-      <p class="text-base mb--2!">销售推广手册 · 一站式 AI 内容创作平台</p>
-      <p class="text-base">Sales Playbook</p>
+      <p class="text-base mb--2!">一站式 AI 内容创作平台</p>
     </div>
   </div>
 
@@ -36,6 +35,7 @@ transition: slide-left
   <button class="toc-btn" @click="$nav.go(4)">02 适用人群</button>
   <button class="toc-btn" @click="$nav.go(5)">03 产品能力</button>
   <button class="toc-btn" @click="$nav.go(9)">04 定价方案</button>
+  <button class="toc-btn" @click="$nav.go(12)">05 快速上手</button>
 </div>
 
 ---
@@ -395,6 +395,8 @@ transition: slide-left
 
 ---
 
+##### 05 快速上手 | Quick Start
+
 # 快速上手
 
 <section class="timeline-clean" aria-label="快速上手" style="grid-template-columns: repeat(4, minmax(0, 1fr));">
@@ -438,6 +440,6 @@ class: text-center
 <div class="mt-4 text-sm opacity-85">
   <p><strong>官网</strong>：<a href="https://yueling.xingluan.cn/" target="_blank">https://yueling.xingluan.cn/</a></p>
   <p>手机号一键注册，赠送 50 积分，零成本上手</p>
-  <p><strong>新手指南</strong>：<a href="https://icnb1aakmvl1.feishu.cn/wiki/DUjxwQJERiUFzmk0L5CcunWLn2d" target="_blank">详细图文教程 →</a></p>
+  <p><strong>新人指南</strong>：<a href="https://icnb1aakmvl1.feishu.cn/wiki/DUjxwQJERiUFzmk0L5CcunWLn2d" target="_blank">详细图文教程 →</a></p>
   <p>产品内「联系客服」，专业版及以上享专属客服</p>
 </div>
