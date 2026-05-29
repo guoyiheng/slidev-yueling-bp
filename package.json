@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "slidev",
     "build": "slidev build",
-    "export": "slidev export"
+    "export": "slidev export",
+    "export:fast": "slidev export --output dist/slides-vector.pdf && pdftoppm -r 192 -png dist/slides-vector.pdf dist/page && magick dist/page-*.png -density 192 -units PixelsPerInch -compress zip slides-export.pdf && rm -f dist/page-*.png dist/slides-vector.pdf"
   },
   "keywords": [
     "slidev",

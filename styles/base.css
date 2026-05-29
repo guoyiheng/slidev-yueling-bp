@@ -141,7 +141,7 @@
 .biz-table,
 .competitor-table {
   --uno: w-full text-[0.78rem];
-  background: rgba(255, 255, 255, 0.64);
+  background: #ffffff;
 }
 
 .biz-table th,
@@ -157,12 +157,12 @@
 .competitor-table thead th {
   font-weight: 700;
   color: color-mix(in srgb, var(--bp-ink) 86%, var(--bp-primary) 14%);
-  background: linear-gradient(180deg, rgba(255, 240, 107, 0.38), rgba(255, 240, 107, 0.14));
+  background: #fff5c2;
 }
 
 .biz-table tbody tr:nth-child(even),
 .competitor-table tbody tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.56);
+  background: #faf6ee;
 }
 
 .competitor-table tbody td:first-child {
@@ -689,9 +689,7 @@
   border-top: none;
   border-left: none;
   border-radius: 8px;
-  background:
-    linear-gradient(145deg, rgba(255, 240, 107, 0.16), rgba(255, 255, 255, 0.9) 34%),
-    rgba(255, 255, 255, 0.92);
+  background: #ffffff;
   /* box-shadow: 0 12px 24px rgba(24, 18, 10, 0.08); */
   display: grid;
   grid-template-rows: 128px auto;
@@ -737,7 +735,6 @@
 .slidev-page-11 .biz-table,
 .slidev-page-13 .competitor-table {
   width: 100%;
-  box-shadow: 0 14px 30px rgba(24, 18, 10, 0.08);
   border-radius: 4px;
   overflow: hidden;
 }
@@ -779,7 +776,7 @@
 .slidev-page-12 .slidev-layout .timeline-clean__item {
   position: relative;
   padding: 1.5rem;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.4) 100%);
+  background: #ffffff;
   border: 1px solid rgba(25, 22, 18, 0.08);
   border-radius: 12px;
   /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03); */
@@ -1189,3 +1186,41 @@ button[v-click].slidev-vclick-target {
   background: color-mix(in srgb, var(--bp-primary) 48%, var(--bp-muted) 52%);
   opacity: 0.65;
 } */
+
+@media print {
+  .slidev-layout {
+    background: var(--bp-surface) !important;
+  }
+
+  .slidev-page-1 .slidev-layout > div,
+  .slidev-page-4 .slidev-layout ul.target-user-grid li,
+  .slidev-page-10 .slidev-layout ul.target-user-grid li,
+  .slidev-page-12 .slidev-layout .timeline-clean__item {
+    background: #fff !important;
+  }
+
+  .biz-table,
+  .competitor-table {
+    background: #fff !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+  }
+
+  .biz-table tbody tr:nth-child(even),
+  .competitor-table tbody tr:nth-child(even) {
+    background: #faf6ee !important;
+  }
+
+  .biz-table thead th,
+  .competitor-table thead th,
+  .slidev-page-13 .competitor-table thead th {
+    background: #fff5c2 !important;
+  }
+
+  .slidev-page-2 .slidev-layout li,
+  .slidev-page-6 .slidev-layout li,
+  .slidev-page-11 .biz-table,
+  .slidev-page-13 .competitor-table {
+    box-shadow: none !important;
+  }
+}
