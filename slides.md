@@ -88,19 +88,6 @@ transition: slide-left
     <figcaption>《人皇幡》第一季</figcaption>
   </figure>
 
-  <figure class="drama-card">
-    <div class="drama-card__poster">
-      <img src="/drama2.png" alt="作品 02" />
-    </div>
-    <figcaption>《人皇幡》第二季</figcaption>
-  </figure>
-
-  <figure class="drama-card">
-    <div class="drama-card__poster">
-      <img src="/drama3.png" alt="作品 03" />
-    </div>
-    <figcaption>《人皇幡》第三季</figcaption>
-  </figure>
 
   <figure class="drama-card">
     <div class="drama-card__poster">
@@ -115,6 +102,21 @@ transition: slide-left
     </div>
     <figcaption>《80年代番茄炒鸡蛋》</figcaption>
   </figure>
+
+  <figure class="drama-card">
+    <div class="drama-card__poster">
+      <img src="/drama2.png" alt="作品 02" />
+    </div>
+    <figcaption>《人皇幡》第二季</figcaption>
+  </figure>
+
+  <figure class="drama-card">
+    <div class="drama-card__poster">
+      <img src="/drama3.png" alt="作品 03" />
+    </div>
+    <figcaption>《人皇幡》第三季</figcaption>
+  </figure>
+
 </div>
 
 ---
